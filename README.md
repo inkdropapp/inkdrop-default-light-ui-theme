@@ -1,4 +1,4 @@
-# Template for Inkdrop UI Theme
+# Default Light UI Theme for Inkdrop
 
 ## How to build
 
