@@ -2,7 +2,9 @@
   "name": "default-light-ui",
   "version": "0.1.0",
   "theme": "ui",
-  "styleSheets": ["theme.css"],
+  "styleSheets": [
+    "theme.css"
+  ],
   "description": "A default light UI theme",
   "scripts": {
     "run": "gulp"
@@ -45,5 +47,6 @@
     "run-sequence": "^1.1.0",
     "wrench": "https://github.com/derekslife/wrench-js/tarball/156eaceed68ed31ffe2a3ecfbcb2be6ed1417fb2",
     "yamljs": "^0.2.3"
-  }
+  },
+  "dependencies": {}
 }
