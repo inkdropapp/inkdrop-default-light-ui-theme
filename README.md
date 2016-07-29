@@ -1,6 +1,6 @@
 # Default Light UI Theme for Inkdrop
 
-## How wo build
+## How to build
 
 ```
 npm install
