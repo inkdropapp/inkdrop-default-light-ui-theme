@@ -16,6 +16,5 @@ module.exports = function(callback) {
   } else {
     paths.push(config.paths.clean);
   }
-  console.log('paths:', paths);
   return del(paths, tasks.settings.del, callback);
 };
