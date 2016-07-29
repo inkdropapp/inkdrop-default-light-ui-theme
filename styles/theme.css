@@ -1469,6 +1469,10 @@ input::selection {
         Note List Bar
   --------------------*/
   --note-list-bar-background: #f5f5f4;
+  /*-------------------
+        Preferences
+  --------------------*/
+  --preferences-sidebar-background: #f5f5f4;
 }
 /*!
  * # Semantic UI 2.2.2 - Button

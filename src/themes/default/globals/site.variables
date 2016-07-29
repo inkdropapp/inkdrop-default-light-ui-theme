@@ -949,9 +949,13 @@
 @scrollbarTrackBackground: rgba(0,0,0,0.3);
 @scrollbarThumbBackground: rgba(255,255,255,0.4);
 
-
 /*-------------------
       Note List Bar
 --------------------*/
 @noteListBarBackground: rgb(245, 245, 244);
+
+/*-------------------
+      Preferences
+--------------------*/
+@preferencesSidebarBackground: rgb(245, 245, 244);
 
