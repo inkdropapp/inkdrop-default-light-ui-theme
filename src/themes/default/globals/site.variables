@@ -971,6 +971,15 @@
 @noteSearchBarBorderBottom: 1px solid @whiteDown;
 
 /*-------------------
+      Header Note Menu
+--------------------*/
+@headerNoteMenuBackground: transparent;
+@headerNoteMenuColor: @lightTextColor;
+@headerNoteMenuActionItemSeparatorBorder: 1px solid @whiteDown;
+@headerNoteMenuEncryptButtonColor: @yellowTextColor;
+@headerNoteMenuEncryptButtonBackground: @yellowBackground;
+
+/*-------------------
       Preferences
 --------------------*/
 @preferencesSidebarBackground: rgb(245, 245, 244);
