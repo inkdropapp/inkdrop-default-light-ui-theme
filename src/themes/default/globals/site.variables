@@ -946,6 +946,8 @@
 @sidebarMenuActionColor : @invertedDisabledTextColor;
 @sidebarMenuActionHoverColor : @invertedLightTextColor;
 @sidebarSyncStatusViewBackground: #12151A;
+@sidebarSyncStatusViewTextColor: @invertedMutedTextColor;
+@sidebarSyncStatusViewDetailColor: @invertedUnselectedTextColor;
 
 /*-------------------
       Scroll Bar
