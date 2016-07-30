@@ -941,6 +941,10 @@
 --------------------*/
 @sidebarBackground     : @black;
 @sidebarMenuItemActiveBackground: lighten(#242833, 10%);
+@sidebarMenuSectionColor: @invertedUnselectedTextColor;
+@sidebarMenuItemColor  : @invertedLightTextColor;
+@sidebarMenuActionColor : @invertedDisabledTextColor;
+@sidebarMenuActionHoverColor : @invertedLightTextColor;
 @sidebarSyncStatusViewBackground: #12151A;
 
 /*-------------------
@@ -953,6 +957,16 @@
       Note List Bar
 --------------------*/
 @noteListBarBackground: rgb(245, 245, 244);
+@noteListViewItemColor: @mutedTextColor;
+@noteListViewItemSeparatorBorder: 1px solid @whiteDown;
+@noteListViewItemDateColor: @primaryColor;
+@noteListViewItemTagColor: @blueFocus;
+@noteListViewItemActiveBackground: @primaryColorFocus;
+@noteListViewItemActiveColor: @invertedTextColor;
+@noteListViewItemActiveDateColor: @invertedTextColor;
+@noteListViewItemActiveTagColor: @invertedTextColor;
+@noteListViewItemFocusInnerShadow: inset 0 0 4px rgba(0,0,0,0.8);
+@noteSearchBarBorderBottom: 1px solid @whiteDown;
 
 /*-------------------
       Preferences
