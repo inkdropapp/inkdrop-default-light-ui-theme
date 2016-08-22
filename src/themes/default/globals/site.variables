@@ -952,8 +952,8 @@
 /*-------------------
       Scroll Bar
 --------------------*/
-@scrollbarTrackBackground: rgba(0,0,0,0.3);
-@scrollbarThumbBackground: rgba(255,255,255,0.4);
+@scrollbarTrackBackground: rgba(0,0,0,0.1);
+@scrollbarThumbBackground: rgba(0,0,0,0.2);
 
 /*-------------------
       Note List Bar
