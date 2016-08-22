@@ -1469,8 +1469,8 @@ input::selection {
   /*-------------------
         Scroll Bar
   --------------------*/
-  --scrollbar-track-background: rgba(0, 0, 0, 0.3);
-  --scrollbar-thumb-background: rgba(255, 255, 255, 0.4);
+  --scrollbar-track-background: rgba(0, 0, 0, 0.1);
+  --scrollbar-thumb-background: rgba(0, 0, 0, 0.2);
   /*-------------------
         Note List Bar
   --------------------*/
