@@ -984,3 +984,11 @@
 --------------------*/
 @preferencesSidebarBackground: rgb(245, 245, 244);
 
+/*-------------------
+      Task Icons
+--------------------*/
+@taskIconActive: darkgray;
+@taskIconOnHold: orange;
+@taskIconCompleted: limegreen;
+@taskIconDropped: lightcoral;
+
