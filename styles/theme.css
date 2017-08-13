@@ -1497,6 +1497,13 @@ input::selection {
         Preferences
   --------------------*/
   --preferences-sidebar-background: #f5f5f4;
+  /*-------------------
+        Task Icons
+  --------------------*/
+  --task-icon-active: darkgray;
+  --task-icon-onhold: orange;
+  --task-icon-completed: limegreen;
+  --task-icon-dropped: lightcoral;
 }
 /*!
  * # Semantic UI 2.2.2 - Button
