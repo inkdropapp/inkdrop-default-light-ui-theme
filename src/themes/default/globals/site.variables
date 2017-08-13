@@ -991,4 +991,3 @@
 @taskIconOnHold: orange;
 @taskIconCompleted: limegreen;
 @taskIconDropped: lightcoral;
-
