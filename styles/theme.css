@@ -1504,6 +1504,12 @@ input::selection {
   --task-icon-onhold: orange;
   --task-icon-completed: limegreen;
   --task-icon-dropped: lightcoral;
+  /*-------------------
+    Task Progress View
+  --------------------*/
+  --task-progress-view-background-color: #CCC;
+  --task-progress-view-foreground-color: #888;
+  --task-progress-view-completed-color: #32cd32;
 }
 /*!
  * # Semantic UI 2.2.2 - Button
