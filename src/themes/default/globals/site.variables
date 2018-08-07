@@ -991,3 +991,10 @@
 @taskIconOnHold: orange;
 @taskIconCompleted: limegreen;
 @taskIconDropped: lightcoral;
+
+/*-------------------
+  Task Progress View
+--------------------*/
+@taskProgressViewBackgroundColor: #CCC;
+@taskProgressViewForegroundColor: #888;
+@taskProgressViewCompletedColor: rgb(50, 205, 50);
