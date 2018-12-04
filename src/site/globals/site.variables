@@ -2,8 +2,8 @@
      User Global Variables
 *******************************/
 
-@headerFont        : 'Helvetica Neue', Arial, Helvetica, sans-serif;
-@pageFont          : 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@headerFont        : 'Helvetica Neue', 'Yu Gothic UI', 'Meiryo UI', Arial, Helvetica, sans-serif;
+@pageFont          : 'Helvetica Neue', 'Yu Gothic UI', 'Meiryo UI', Arial, Helvetica, sans-serif;
 @importGoogleFonts : false;
 
 @primaryColor: #4F8EFF;
