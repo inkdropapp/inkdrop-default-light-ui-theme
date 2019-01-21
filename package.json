@@ -46,5 +46,8 @@
     "run-sequence": "^1.1.0",
     "yamljs": "^0.2.3"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "engines": {
+    "inkdrop": "^3.25.2"
+  }
 }
