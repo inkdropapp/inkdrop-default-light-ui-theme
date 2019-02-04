@@ -19,9 +19,9 @@ module.exports = {
   },
 
   filenames: {
-    concatenatedCSS            : 'theme.css',
+    concatenatedCSS            : 'semantic.css',
     concatenatedJS             : 'semantic.js',
-    concatenatedMinifiedCSS    : 'theme.min.css',
+    concatenatedMinifiedCSS    : 'semantic.min.css',
     concatenatedMinifiedJS     : 'semantic.min.js',
     concatenatedRTLCSS         : 'semantic.rtl.css',
     concatenatedMinifiedRTLCSS : 'semantic.rtl.min.css'
@@ -138,26 +138,32 @@ module.exports = {
     minify: {
       processImport       : false,
       restructuring       : false,
-      keepSpecialComments : 1
+      keepSpecialComments : 1,
+      roundingPrecision   : -1,
     },
 
     /* Minified JS Settings */
     uglify: {
-      mangle           : true,
-      preserveComments : 'some'
+      mangle   : true,
+      output: {
+        comments: 'some'
+      }
     },
 
     /* Minified Concat CSS Settings */
     concatMinify: {
       processImport       : false,
       restructuring       : false,
-      keepSpecialComments : false
+      keepSpecialComments : false,
+      roundingPrecision   : -1,
     },
 
     /* Minified Concat JS */
     concatUglify: {
-      mangle           : true,
-      preserveComments : false
+      mangle   : true,
+      output: {
+        comments: 'some'
+      }
     }
 
   }
