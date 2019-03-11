@@ -987,6 +987,7 @@
         Preferences
   --------------------*/
   --preferences-sidebar-background: @preferencesSidebarBackground;
+  --preferences-sidebar-item-active-background: @preferencesSidebarItemActiveBackground;
   --preferences-view-background: @preferencesViewBackground;
 
   /*-------------------

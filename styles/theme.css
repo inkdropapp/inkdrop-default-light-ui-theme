@@ -1526,6 +1526,7 @@ input::selection {
         Preferences
   --------------------*/
   --preferences-sidebar-background: #f5f5f4;
+  --preferences-sidebar-item-active-background: rgba(79, 142, 255, 0.2);
   --preferences-view-background: #ffffff;
   /*-------------------
         Task Icons

@@ -58,6 +58,7 @@
       Preferences
 --------------------*/
 @preferencesSidebarBackground: rgb(245, 245, 244);
+@preferencesSidebarItemActiveBackground: rgba(79, 142, 255, 0.2);
 @preferencesViewBackground: rgb(255, 255, 255);
 
 /*-------------------
