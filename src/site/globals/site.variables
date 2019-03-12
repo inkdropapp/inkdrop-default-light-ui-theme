@@ -38,7 +38,7 @@
 @noteListViewItemSeparatorBorder: 1px solid @whiteDown;
 @noteListViewItemDateColor: @primaryColor;
 @noteListViewItemTagColor: @blueFocus;
-@noteListViewItemActiveBackground: @primaryColorFocus;
+@noteListViewItemActiveBackground: @primaryColor;
 @noteListViewItemActiveColor: @invertedTextColor;
 @noteListViewItemActiveDateColor: @invertedTextColor;
 @noteListViewItemActiveTagColor: @invertedTextColor;

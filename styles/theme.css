@@ -1508,7 +1508,7 @@ input::selection {
   --note-list-view-item-separator-border: 1px solid #e6e6e6;
   --note-list-view-item-date-color: #4F8EFF;
   --note-list-view-item-tag-color: #0d71bb;
-  --note-list-view-item-active-background: #2674ff;
+  --note-list-view-item-active-background: #4F8EFF;
   --note-list-view-item-active-color: rgba(255, 255, 255, 0.9);
   --note-list-view-item-active-date-color: rgba(255, 255, 255, 0.9);
   --note-list-view-item-active-tag-color: rgba(255, 255, 255, 0.9);
