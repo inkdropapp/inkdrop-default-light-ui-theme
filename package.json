@@ -1,6 +1,6 @@
 {
   "name": "default-light-ui",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "theme": "ui",
   "description": "Default Light UI Theme for Inkdrop",
   "styleSheets": [
@@ -20,6 +20,6 @@
     "semantic-ui": "^2.4.2"
   },
   "engines": {
-    "inkdrop": "^3.25.2"
+    "inkdrop": "^4.x"
   }
 }
