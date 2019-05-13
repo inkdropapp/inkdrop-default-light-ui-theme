@@ -23,11 +23,16 @@
 @sidebarSyncStatusViewBackground: #12151A;
 @sidebarSyncStatusViewTextColor: @invertedMutedTextColor;
 @sidebarSyncStatusViewDetailColor: @invertedUnselectedTextColor;
+@sidebarScrollbarWidth: 6px;
+@sidebarScrollbarTrackBackground: rgba(255,255,255,0.02);
+@sidebarScrollbarThumbBackground: rgba(255,255,255,0.2);
+
 
 /*-------------------
       Scroll Bar
 --------------------*/
-@scrollbarTrackBackground: rgba(0,0,0,0.1);
+@scrollbarWidth: 6px;
+@scrollbarTrackBackground: rgba(0,0,0,0.05);
 @scrollbarThumbBackground: rgba(0,0,0,0.2);
 
 /*-------------------
