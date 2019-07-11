@@ -4,7 +4,7 @@
   "theme": "ui",
   "description": "Default Light UI Theme for Inkdrop",
   "styleSheets": [
-    "theme.css"
+    "theme.min.css"
   ],
   "scripts": {
     "run": "gulp",
