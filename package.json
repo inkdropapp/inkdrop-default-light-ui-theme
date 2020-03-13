@@ -19,6 +19,9 @@
   "devDependencies": {
     "semantic-ui": "^2.4.2"
   },
+  "browserslist": [
+    "Electron 7.1.13"
+  ],
   "engines": {
     "inkdrop": "^4.x"
   }
