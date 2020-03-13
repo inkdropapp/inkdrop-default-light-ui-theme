@@ -58,6 +58,8 @@
 --------------------*/
 @headerNoteMenuBackground: transparent;
 @headerNoteMenuColor: @lightTextColor;
+@headerNoteMenuActionItemActiveBackground: @infoBackgroundColor;
+@headerNoteMenuActionItemActiveBorder: 1px solid @infoBorderColor;
 @headerNoteMenuActionItemSeparatorBorder: 1px solid @whiteDown;
 @headerNoteMenuEncryptButtonColor: @yellowTextColor;
 @headerNoteMenuEncryptButtonBackground: @yellowBackground;
