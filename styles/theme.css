@@ -33298,6 +33298,13 @@ select.ui.dropdown {
   content: '\f0d7';
 }
 
+/* Inline dropdown menu */
+
+.ui.inline.dropdown .menu {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+}
+
 /* Sub Menu */
 
 .ui.dropdown .menu .item .dropdown.icon:before {
