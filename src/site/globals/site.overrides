@@ -967,6 +967,8 @@
         Note List Bar
   --------------------*/
   --note-list-bar-background: @noteListBarBackground;
+  --note-list-bar-pinned-section-header-background: @noteListBarPinnedSectionHeaderBackground;
+  --note-list-bar-pinned-section-header-border-bottom: @noteListBarPinnedSectionHeaderBorderBottom;
   --note-list-view-item-color: @noteListViewItemColor;
   --note-list-view-item-separator-border: @noteListViewItemSeparatorBorder;
   --note-list-view-item-date-color: @noteListViewItemDateColor;

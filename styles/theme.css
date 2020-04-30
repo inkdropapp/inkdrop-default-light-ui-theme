@@ -1501,6 +1501,8 @@ input::selection {
         Note List Bar
   --------------------*/
   --note-list-bar-background: #f5f5f4;
+  --note-list-bar-pinned-section-header-background: #e6e6e6;
+  --note-list-bar-pinned-section-header-border-bottom: none;
   --note-list-view-item-color: rgba(0, 0, 0, 0.6);
   --note-list-view-item-separator-border: 1px solid #e6e6e6;
   --note-list-view-item-date-color: #4F8EFF;

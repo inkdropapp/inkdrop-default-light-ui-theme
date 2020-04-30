@@ -39,6 +39,8 @@
       Note List Bar
 --------------------*/
 @noteListBarBackground: rgb(245, 245, 244);
+@noteListBarPinnedSectionHeaderBackground: #e6e6e6;
+@noteListBarPinnedSectionHeaderBorderBottom: none;
 @noteListViewItemColor: @mutedTextColor;
 @noteListViewItemSeparatorBorder: 1px solid @whiteDown;
 @noteListViewItemDateColor: @primaryColor;
