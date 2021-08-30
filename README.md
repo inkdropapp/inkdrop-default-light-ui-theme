@@ -5,15 +5,11 @@ It's mostly common in customizing the theme with it, so [their documentation](ht
 
 Read [the documentation](http://doc.inkdrop.info/manual/creating-a-theme) for detailed instructions.
 
-## Use Node v10
-
-Since Semantic UI is no longer maintained, you have to use Node 10 or you will get errors on installing it.
-
 ## How to build
 
 ```
 npm install
-gulp build
+npm build
 ```
 
 ## Which files to edit
