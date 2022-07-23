@@ -20,3 +20,11 @@ npm build
   - Declarations of CSS variables
 - `src/themes/default/globals/site.variables`
   - Common variables
+
+#E6ECED
+#D9EDE5
+#EDC2D5
+#EDD6C2
+#CEEDCF
+
+#FFEBF4

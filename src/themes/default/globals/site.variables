@@ -51,10 +51,12 @@
     Brand Colors
 --------------------*/
 
-@primaryColor        : @blue;
+// @primaryColor        : @blue;
+@primaryColor:       : @orange;
 @secondaryColor      : @black;
 
-@lightPrimaryColor   : @lightBlue;
+// @lightPrimaryColor   : @lightBlue;
+@lightPrimaryColor   : @green;
 @lightSecondaryColor : @lightBlack;
 
 /*--------------

@@ -1,8 +1,8 @@
 {
-  "name": "default-light-ui",
-  "version": "2.1.0",
+  "name": "ice-cream-ui",
+  "version": "1.0.0",
   "theme": "ui",
-  "description": "Default Light UI Theme for Inkdrop",
+  "description": "Ice Cream UI Theme for Inkdrop",
   "styleSheets": [
     "theme.min.css"
   ],
@@ -14,7 +14,7 @@
     "inkdrop",
     "markdown"
   ],
-  "author": "Takuya Matsuyama<t@inkdrop.app>",
+  "author": "Dylan Chew",
   "license": "MIT",
   "devDependencies": {
     "better-console": "^1.0.1",
@@ -54,6 +54,5 @@
   ],
   "engines": {
     "inkdrop": "^5.x"
-  },
-  "dependencies": {}
+  }
 }

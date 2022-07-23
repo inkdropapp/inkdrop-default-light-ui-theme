@@ -3,7 +3,7 @@
  * https://github.com/fomantic/Fomantic-UI
  * http://fomantic-ui.com/
  *
- * Copyright 2021 Contributors
+ * Copyright 2022 Contributors
  * Released under the MIT license
  * http://opensource.org/licenses/MIT
  *
@@ -649,7 +649,7 @@ a {
 }
 
 a:hover {
-  color: #4F8EFF;
+  color: #e19bba;
   text-decoration: none;
 }
 
@@ -731,9 +731,9 @@ input::selection {
   /*-------------------
       Brand Colors
    --------------------*/
-  --primary-color: #4F8EFF;
+  --primary-color: #e19bba;
   --secondary-color: #1B1C1D;
-  --light-primary-color: #54C8FF;
+  --light-primary-color: #21BA45;
   --light-secondary-color: #545454;
   /*--------------
     Page Heading
@@ -798,7 +798,7 @@ input::selection {
    --------------------*/
   --link-color: #4183C4;
   --link-underline: none;
-  --link-hover-color: #4F8EFF;
+  --link-hover-color: #e19bba;
   --link-hover-underline: none;
   /*-------------------
     Highlighted Text
@@ -1280,7 +1280,7 @@ input::selection {
   --floating-shadow-hover: 0px 2px 4px 0px rgba(34, 36, 38, 0.15),
     0px 2px 10px 0px rgba(34, 36, 38, 0.25);
   /*---  Colors  ---*/
-  --primary-color-hover: #357eff;
+  --primary-color-hover: #e083ac;
   --secondary-color-hover: #27292a;
   --red-hover: #d01919;
   --orange-hover: #f26202;
@@ -1330,7 +1330,7 @@ input::selection {
           Focus
    --------------------*/
   /*---  Colors  ---*/
-  --primary-color-focus: #2674ff;
+  --primary-color-focus: #e172a3;
   --secondary-color-focus: #2e3032;
   --red-focus: #ca1010;
   --orange-focus: #e55b00;
@@ -1380,7 +1380,7 @@ input::selection {
       Down (:active)
    --------------------*/
   /*---  Colors  ---*/
-  --primary-color-down: #1c6dff;
+  --primary-color-down: #d6739f;
   --secondary-color-down: #343637;
   --red-down: #b21e1e;
   --orange-down: #cf590c;
@@ -1430,7 +1430,7 @@ input::selection {
           Active
    --------------------*/
   /*---  Colors  ---*/
-  --primary-color-active: #357eff;
+  --primary-color-active: #e281ac;
   --secondary-color-active: #27292a;
   --red-active: #d41515;
   --orange-active: #f56100;
@@ -1479,41 +1479,41 @@ input::selection {
   /*-------------------
         Side Bar
   --------------------*/
-  --sidebar-background: #171A21;
-  --sidebar-menu-item-active-background: #393f51;
-  --sidebar-menu-section-color: rgba(255, 255, 255, 0.5);
-  --sidebar-menu-item-color: rgba(255, 255, 255, 0.7);
-  --sidebar-menu-action-color: rgba(225, 225, 225, 0.3);
-  --sidebar-menu-action-hover-color: rgba(255, 255, 255, 0.7);
-  --sidebar-sync-status-view-background: #12151A;
-  --sidebar-sync-status-view-text-color: rgba(255, 255, 255, 0.8);
-  --sidebar-sync-status-view-detail-color: rgba(255, 255, 255, 0.5);
+  --sidebar-background: #D9EDE5;
+  --sidebar-menu-item-active-background: #b6ddcd;
+  --sidebar-menu-section-color: #4D2A1E;
+  --sidebar-menu-item-color: #4D2A1E;
+  --sidebar-menu-action-color: #40876b;
+  --sidebar-menu-action-hover-color: #4D2A1E;
+  --sidebar-sync-status-view-background: #a5d4c1;
+  --sidebar-sync-status-view-text-color: #4D2A1E;
+  --sidebar-sync-status-view-detail-color: #5f3425;
   --sidebar-scrollbar-width: 6px;
-  --sidebar-scrollbar-track-background: rgba(255, 255, 255, 0.02);
-  --sidebar-scrollbar-thumb-background: rgba(255, 255, 255, 0.2);
+  --sidebar-scrollbar-track-background: rgba(0, 0, 0, 0.1);
+  --sidebar-scrollbar-thumb-background: rgba(0, 0, 0, 0.3);
   /*-------------------
         Scroll Bar
   --------------------*/
   --scrollbar-width: 6px;
-  --scrollbar-track-background: rgba(0, 0, 0, 0.05);
+  --scrollbar-track-background: rgba(0, 0, 0, 0.02);
   --scrollbar-thumb-background: rgba(0, 0, 0, 0.2);
   /*-------------------
         Note List Bar
   --------------------*/
-  --note-list-bar-background: #f5f5f4;
-  --note-list-bar-pinned-section-header-background: #e6e6e6;
+  --note-list-bar-background: #fffafc;
+  --note-list-bar-pinned-section-header-background: #d6739f;
   --note-list-bar-pinned-section-header-border-bottom: none;
-  --note-list-bar-pinned-section-footer-border-bottom: 4px solid #ccc;
-  --note-list-view-item-color: rgba(0, 0, 0, 0.6);
-  --note-list-view-item-separator-border: 1px solid #e6e6e6;
-  --note-list-view-item-date-color: #4F8EFF;
-  --note-list-view-item-tag-color: #0d71bb;
-  --note-list-view-item-active-background: #4F8EFF;
-  --note-list-view-item-active-color: rgba(255, 255, 255, 0.9);
-  --note-list-view-item-active-date-color: rgba(255, 255, 255, 0.9);
-  --note-list-view-item-active-tag-color: rgba(255, 255, 255, 0.9);
-  --note-list-view-item-focus-inner-shadow: inset 0 0 4px rgba(0, 0, 0, 0.8);
-  --note-search-bar-background: #f5f5f4;
+  --note-list-bar-pinned-section-footer-border-bottom: 4px solid #EDC2D5;
+  --note-list-view-item-color: #AB9DA3;
+  --note-list-view-item-separator-border: 1px solid #FFEBF4;
+  --note-list-view-item-date-color: #e19bba;
+  --note-list-view-item-tag-color: #e19bba;
+  --note-list-view-item-active-background: #e19bba;
+  --note-list-view-item-active-color: #FFF4EB;
+  --note-list-view-item-active-date-color: #FFF4EB;
+  --note-list-view-item-active-tag-color: #FFF4EB;
+  --note-list-view-item-focus-inner-shadow: inset 0 0 4px rgba(0, 0, 0, 0.4);
+  --note-search-bar-background: #fffafc;
   --note-search-bar-border-bottom: rgba(255, 255, 255, 0.8);
   --note-search-bar-input-border: none;
   --note-search-bar-input-background: #FFFFFF;
@@ -1521,7 +1521,7 @@ input::selection {
         Header Note Menu
   --------------------*/
   --header-note-menu-background: transparent;
-  --header-note-menu-color: rgba(0, 0, 0, 0.4);
+  --header-note-menu-color: #4D2A1E;
   --header-note-menu-action-item-active-background: #F8FFFF;
   --header-note-menu-action-item-active-border: 1px solid #A9D5DE;
   --header-note-menu-action-item-separator-border: 1px solid #e6e6e6;
@@ -1530,16 +1530,16 @@ input::selection {
   /*-------------------
         Preferences
   --------------------*/
-  --preferences-sidebar-background: #f5f5f4;
-  --preferences-sidebar-item-active-background: rgba(79, 142, 255, 0.2);
-  --preferences-view-background: #ffffff;
+  --preferences-sidebar-background: #D9EDE5;
+  --preferences-sidebar-item-active-background: #b6ddcd;
+  --preferences-view-background: #FFF9F7;
   /*-------------------
         Task Icons
   --------------------*/
   --task-icon-active: darkgray;
-  --task-icon-onhold: orange;
-  --task-icon-completed: limegreen;
-  --task-icon-dropped: lightcoral;
+  --task-icon-onhold: #ca874c;
+  --task-icon-completed: #40876b;
+  --task-icon-dropped: #882852;
   /*-------------------
     Task Progress View
   --------------------*/
@@ -5002,7 +5002,7 @@ input::selection {
 
 .ui.primary.buttons .button,
 .ui.primary.button {
-  background-color: #4F8EFF;
+  background-color: #e19bba;
   color: #FFFFFF;
   text-shadow: none;
   background-image: none;
@@ -5014,21 +5014,21 @@ input::selection {
 
 .ui.primary.buttons .button:hover,
 .ui.primary.button:hover {
-  background-color: #357eff;
+  background-color: #e083ac;
   color: #FFFFFF;
   text-shadow: none;
 }
 
 .ui.primary.buttons .button:focus,
 .ui.primary.button:focus {
-  background-color: #2674ff;
+  background-color: #e172a3;
   color: #FFFFFF;
   text-shadow: none;
 }
 
 .ui.primary.buttons .button:active,
 .ui.primary.button:active {
-  background-color: #1c6dff;
+  background-color: #d6739f;
   color: #FFFFFF;
   text-shadow: none;
 }
@@ -5037,7 +5037,7 @@ input::selection {
 .ui.primary.buttons .active.button:active,
 .ui.primary.active.button,
 .ui.primary.button .active.button:active {
-  background-color: #357eff;
+  background-color: #e281ac;
   color: #FFFFFF;
   text-shadow: none;
 }
@@ -5046,35 +5046,35 @@ input::selection {
 
 .ui.basic.primary.buttons .button,
 .ui.basic.primary.button {
-  box-shadow: 0px 0px 0px 1px #4F8EFF inset !important;
-  color: #4F8EFF !important;
+  box-shadow: 0px 0px 0px 1px #e19bba inset !important;
+  color: #e19bba !important;
 }
 
 .ui.basic.primary.buttons .button:hover,
 .ui.basic.primary.button:hover {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 1px #357eff inset !important;
-  color: #357eff !important;
+  box-shadow: 0px 0px 0px 1px #e083ac inset !important;
+  color: #e083ac !important;
 }
 
 .ui.basic.primary.buttons .button:focus,
 .ui.basic.primary.button:focus {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 1px #2674ff inset !important;
-  color: #357eff !important;
+  box-shadow: 0px 0px 0px 1px #e172a3 inset !important;
+  color: #e083ac !important;
 }
 
 .ui.basic.primary.buttons .active.button,
 .ui.basic.primary.active.button {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 1px #357eff inset !important;
-  color: #1c6dff !important;
+  box-shadow: 0px 0px 0px 1px #e281ac inset !important;
+  color: #d6739f !important;
 }
 
 .ui.basic.primary.buttons .button:active,
 .ui.basic.primary.button:active {
-  box-shadow: 0px 0px 0px 1px #1c6dff inset !important;
-  color: #1c6dff !important;
+  box-shadow: 0px 0px 0px 1px #d6739f inset !important;
+  color: #d6739f !important;
 }
 
 .ui.buttons:not(.vertical) > .basic.primary.button:not(:first-child) {
@@ -5086,8 +5086,8 @@ input::selection {
 .ui.inverted.primary.buttons .button,
 .ui.inverted.primary.button {
   background-color: transparent;
-  box-shadow: 0px 0px 0px 2px #54C8FF inset !important;
-  color: #54C8FF;
+  box-shadow: 0px 0px 0px 2px #21BA45 inset !important;
+  color: #21BA45;
 }
 
 .ui.inverted.primary.buttons .button:hover,
@@ -5104,22 +5104,22 @@ input::selection {
 
 .ui.inverted.primary.buttons .button:hover,
 .ui.inverted.primary.button:hover {
-  background-color: #3ac0ff;
+  background-color: #16ab39;
 }
 
 .ui.inverted.primary.buttons .button:focus,
 .ui.inverted.primary.button:focus {
-  background-color: #2bbbff;
+  background-color: #0ea432;
 }
 
 .ui.inverted.primary.buttons .active.button,
 .ui.inverted.primary.active.button {
-  background-color: #3ac0ff;
+  background-color: #13ae38;
 }
 
 .ui.inverted.primary.buttons .button:active,
 .ui.inverted.primary.button:active {
-  background-color: #21b8ff;
+  background-color: #198f35;
 }
 
 /* Inverted Basic */
@@ -5135,29 +5135,29 @@ input::selection {
 .ui.inverted.primary.basic.buttons .button:hover,
 .ui.inverted.primary.buttons .basic.button:hover,
 .ui.inverted.primary.basic.button:hover {
-  box-shadow: 0px 0px 0px 2px #3ac0ff inset !important;
-  color: #54C8FF !important;
+  box-shadow: 0px 0px 0px 2px #16ab39 inset !important;
+  color: #21BA45 !important;
 }
 
 .ui.inverted.primary.basic.buttons .button:focus,
 .ui.inverted.primary.basic.buttons .button:focus,
 .ui.inverted.primary.basic.button:focus {
-  box-shadow: 0px 0px 0px 2px #2bbbff inset !important;
-  color: #54C8FF !important;
+  box-shadow: 0px 0px 0px 2px #0ea432 inset !important;
+  color: #21BA45 !important;
 }
 
 .ui.inverted.primary.basic.buttons .active.button,
 .ui.inverted.primary.buttons .basic.active.button,
 .ui.inverted.primary.basic.active.button {
-  box-shadow: 0px 0px 0px 2px #3ac0ff inset !important;
-  color: #54C8FF !important;
+  box-shadow: 0px 0px 0px 2px #13ae38 inset !important;
+  color: #21BA45 !important;
 }
 
 .ui.inverted.primary.basic.buttons .button:active,
 .ui.inverted.primary.buttons .basic.button:active,
 .ui.inverted.primary.basic.button:active {
-  box-shadow: 0px 0px 0px 2px #21b8ff inset !important;
-  color: #54C8FF !important;
+  box-shadow: 0px 0px 0px 2px #198f35 inset !important;
+  color: #21BA45 !important;
 }
 
 /*-------------------
@@ -15117,7 +15117,7 @@ img.ui.bordered.image {
   line-height: 1;
   vertical-align: baseline;
   margin: 0em 0.14285714em;
-  background-color: #E8E8E8;
+  background-color: #94ccb6;
   background-image: none;
   padding: 0.5833em 0.833em;
   color: rgba(0, 0, 0, 0.6);
@@ -15259,7 +15259,7 @@ a.ui.label {
   max-width: 9999px;
   vertical-align: baseline;
   text-transform: none;
-  background: #E8E8E8;
+  background: #94ccb6;
   padding: 0.5833em 0.833em 0.5833em 0.5em;
   border-radius: 0.28571429rem;
   box-shadow: none;
@@ -15333,7 +15333,7 @@ a.ui.label {
   margin: 0em;
   padding: 0em;
   text-align: center;
-  border-color: #E8E8E8;
+  border-color: #94ccb6;
   width: 4em;
   height: 4em;
   z-index: 1;
@@ -16247,7 +16247,7 @@ a.ui.basic.black.label:hover {
 a.ui.basic.label:hover {
   text-decoration: none;
   background: none #FFFFFF;
-  color: #4F8EFF;
+  color: #e19bba;
   box-shadow: 1px solid rgba(34, 36, 38, 0.15);
   box-shadow: none;
 }
@@ -16714,7 +16714,7 @@ ol.ui.list ol li,
 
 .ui.list .list > a.item:hover,
 .ui.list > a.item:hover {
-  color: #4F8EFF;
+  color: #e19bba;
 }
 
 /* Linked Item Icons */
@@ -16734,7 +16734,7 @@ ol.ui.list ol li,
 
 .ui.list .list > .item a.header:hover,
 .ui.list > .item a.header:hover {
-  color: #4F8EFF !important;
+  color: #e19bba !important;
 }
 
 /* Floated Content */
@@ -16910,7 +16910,7 @@ ol.ui.list ol li,
 
 .ui.inverted.list .list > a.item:hover,
 .ui.inverted.list > a.item:hover {
-  color: #4F8EFF;
+  color: #e19bba;
 }
 
 /* Linking Content */
@@ -16920,7 +16920,7 @@ ol.ui.list ol li,
 }
 
 .ui.inverted.list .item a:not(.ui):hover {
-  color: #4F8EFF !important;
+  color: #e19bba !important;
 }
 
 /*-------------------
@@ -20220,7 +20220,7 @@ ol.ui.horizontal.list li:before,
 }
 
 .ui.breadcrumb a:hover {
-  color: #4F8EFF;
+  color: #e19bba;
 }
 
 /* Icon Divider */
@@ -28221,7 +28221,7 @@ Floated Menu / Item
 
 .ui.cards > .card > .content > a.header:hover,
 .ui.card > .content > a.header:hover {
-  color: #4F8EFF;
+  color: #e19bba;
 }
 
 /* Meta */
@@ -28335,7 +28335,7 @@ Floated Menu / Item
 
 .ui.cards > .card > .extra a:not(.ui):hover,
 .ui.card > .extra a:not(.ui):hover {
-  color: #4F8EFF;
+  color: #e19bba;
 }
 
 /*******************************
@@ -29076,7 +29076,7 @@ a.ui.card:hover,
 }
 
 .ui.comments .comment a.author:hover {
-  color: #4F8EFF;
+  color: #e19bba;
 }
 
 /*--------------
@@ -29783,7 +29783,7 @@ a.ui.card:hover,
 }
 
 .ui.items > .item > .content > a.header:hover {
-  color: #4F8EFF;
+  color: #e19bba;
 }
 
 /* Meta */
@@ -30004,7 +30004,7 @@ a.ui.card:hover,
 
 .ui.items a.item:hover .content .header,
 .ui.link.items > .item:hover .content .header {
-  color: #4F8EFF;
+  color: #e19bba;
 }
 
 /*--------------
@@ -31449,7 +31449,7 @@ a.ui.card:hover,
 
 .ui.toggle.checkbox input:checked ~ .box:before,
 .ui.toggle.checkbox input:checked ~ label:before {
-  background-color: #4F8EFF !important;
+  background-color: #e19bba !important;
 }
 
 .ui.toggle.checkbox input:checked ~ .box:after,
@@ -31467,7 +31467,7 @@ a.ui.card:hover,
 
 .ui.toggle.checkbox input:focus:checked ~ .box:before,
 .ui.toggle.checkbox input:focus:checked ~ label:before {
-  background-color: #2674ff !important;
+  background-color: #e172a3 !important;
 }
 
 /*******************************
@@ -33519,7 +33519,7 @@ select.ui.dropdown {
   display: none;
   z-index: 1001;
   text-align: left;
-  background: #FFFFFF;
+  background: #FFF4EB;
   border: none;
   box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.2), 1px 3px 15px 2px rgba(0, 0, 0, 0.2);
   transform-origin: 50% 25%;
@@ -33556,7 +33556,7 @@ select.ui.dropdown {
   z-index: 1;
   opacity: 0.8;
   font-size: 1.25em;
-  color: #FFFFFF;
+  color: #ff0;
   width: 2.25rem;
   height: 2.25rem;
   padding: 0.625rem 0rem 0rem 0rem;
@@ -33573,7 +33573,7 @@ select.ui.dropdown {
 .ui.modal > .header {
   display: block;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-  background: #FFFFFF;
+  background: #FFF4EB;
   margin: 0em;
   padding: 1.25rem 1.5rem;
   box-shadow: none;
@@ -33597,7 +33597,7 @@ select.ui.dropdown {
   font-size: 1em;
   line-height: 1.4;
   padding: 1.5rem;
-  background: #FFFFFF;
+  background: #fff7f0;
 }
 
 .ui.modal > .image.content {
@@ -33658,7 +33658,7 @@ select.ui.dropdown {
 ---------------*/
 
 .ui.modal > .actions {
-  background: #F9FAFB;
+  background: #FFF4EB;
   padding: 1rem 1rem;
   border-top: 1px solid rgba(34, 36, 38, 0.15);
   text-align: right;

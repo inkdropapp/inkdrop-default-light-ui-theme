@@ -7,50 +7,50 @@
 @importGoogleFonts : false;
 @useCustomScrollbars: false;
 
-@primaryColor: #4F8EFF;
+@primaryColor: darken(@iceCreamStrawberry, 10%);
 @linkHoverColor: @primaryColor;
 
 
 /*-------------------
       Side Bar
 --------------------*/
-@sidebarBackground     : #171A21;
-@sidebarMenuItemActiveBackground: lighten(#242833, 10%);
-@sidebarMenuSectionColor: @invertedUnselectedTextColor;
-@sidebarMenuItemColor  : @invertedLightTextColor;
-@sidebarMenuActionColor : @invertedDisabledTextColor;
-@sidebarMenuActionHoverColor : @invertedLightTextColor;
-@sidebarSyncStatusViewBackground: #12151A;
-@sidebarSyncStatusViewTextColor: @invertedMutedTextColor;
-@sidebarSyncStatusViewDetailColor: @invertedUnselectedTextColor;
+@sidebarBackground: @iceCreamMint;
+@sidebarMenuItemActiveBackground: darken(@iceCreamMint, 10%);
+@sidebarMenuSectionColor: @iceCreamChoco;
+@sidebarMenuItemColor   : @iceCreamChoco;
+@sidebarMenuActionColor : darken(@iceCreamMint, 50%);
+@sidebarMenuActionHoverColor : @iceCreamChoco;
+@sidebarSyncStatusViewBackground: darken(@iceCreamMint, 15%);
+@sidebarSyncStatusViewTextColor: @iceCreamChoco;
+@sidebarSyncStatusViewDetailColor: lighten(@iceCreamChoco, 5%);
 @sidebarScrollbarWidth: 6px;
-@sidebarScrollbarTrackBackground: rgba(255,255,255,0.02);
-@sidebarScrollbarThumbBackground: rgba(255,255,255,0.2);
+@sidebarScrollbarTrackBackground: rgba(0,0,0,0.1);
+@sidebarScrollbarThumbBackground: rgba(0,0,0,0.3);
 
 
 /*-------------------
       Scroll Bar
 --------------------*/
 @scrollbarWidth: 6px;
-@scrollbarTrackBackground: rgba(0,0,0,0.05);
+@scrollbarTrackBackground: rgba(0,0,0,0.02);
 @scrollbarThumbBackground: rgba(0,0,0,0.2);
 
 /*-------------------
       Note List Bar
 --------------------*/
-@noteListBarBackground: rgb(245, 245, 244);
-@noteListBarPinnedSectionHeaderBackground: #e6e6e6;
+@noteListBarBackground: lighten(@iceCreamStrawberryLight, 3%);
+@noteListBarPinnedSectionHeaderBackground: darken(@iceCreamStrawberry, 20%);
 @noteListBarPinnedSectionHeaderBorderBottom: none;
-@noteListBarPinnedSectionFooterBorderBottom: 4px solid #ccc;
-@noteListViewItemColor: @mutedTextColor;
-@noteListViewItemSeparatorBorder: 1px solid @whiteDown;
+@noteListBarPinnedSectionFooterBorderBottom: 4px solid @iceCreamStrawberry;
+@noteListViewItemColor: @iceCreamStrawberryDark;
+@noteListViewItemSeparatorBorder: 1px solid @iceCreamStrawberryLight;
 @noteListViewItemDateColor: @primaryColor;
-@noteListViewItemTagColor: @blueFocus;
+@noteListViewItemTagColor: @primaryColor;
 @noteListViewItemActiveBackground: @primaryColor;
-@noteListViewItemActiveColor: @invertedTextColor;
-@noteListViewItemActiveDateColor: @invertedTextColor;
-@noteListViewItemActiveTagColor: @invertedTextColor;
-@noteListViewItemFocusInnerShadow: inset 0 0 4px rgba(0,0,0,0.8);
+@noteListViewItemActiveColor: @iceCreamVanilla;
+@noteListViewItemActiveDateColor: @iceCreamVanilla;
+@noteListViewItemActiveTagColor: @iceCreamVanilla;
+@noteListViewItemFocusInnerShadow: inset 0 0 4px rgba(0,0,0,0.4);
 @noteSearchBarBackground: @noteListBarBackground;
 @noteSearchBarBorderBottom: rgba(255,255,255,0.8);
 @noteSearchBarInputBorder: none;
@@ -60,7 +60,7 @@
       Header Note Menu
 --------------------*/
 @headerNoteMenuBackground: transparent;
-@headerNoteMenuColor: @lightTextColor;
+@headerNoteMenuColor: @iceCreamChoco;
 @headerNoteMenuActionItemActiveBackground: @infoBackgroundColor;
 @headerNoteMenuActionItemActiveBorder: 1px solid @infoBorderColor;
 @headerNoteMenuActionItemSeparatorBorder: 1px solid @whiteDown;
@@ -70,17 +70,17 @@
 /*-------------------
       Preferences
 --------------------*/
-@preferencesSidebarBackground: rgb(245, 245, 244);
-@preferencesSidebarItemActiveBackground: rgba(79, 142, 255, 0.2);
-@preferencesViewBackground: rgb(255, 255, 255);
+@preferencesSidebarBackground: @iceCreamMint;
+@preferencesSidebarItemActiveBackground: darken(@iceCreamMint, 10%);
+@preferencesViewBackground: @iceCreamWhite;
 
 /*-------------------
       Task Icons
 --------------------*/
 @taskIconActive: darkgray;
-@taskIconOnHold: orange;
-@taskIconCompleted: limegreen;
-@taskIconDropped: lightcoral;
+@taskIconOnHold: darken(@iceCreamOrange, 30%);
+@taskIconCompleted: darken(@iceCreamMint, 50%);
+@taskIconDropped: darken(@iceCreamStrawberry, 50%);
 
 /*-------------------
   Task Progress View

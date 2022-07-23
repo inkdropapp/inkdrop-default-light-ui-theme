@@ -1,0 +1,12 @@
+/*******************************
+      Ice Cream Variables
+*******************************/
+
+@iceCreamStrawberryDark: #AB9DA3;
+@iceCreamStrawberryLight: #FFEBF4;
+@iceCreamStrawberry: #EDC2D5;
+@iceCreamMint: #D9EDE5;
+@iceCreamChoco: #4D2A1E;
+@iceCreamVanilla: #FFF4EB;
+@iceCreamWhite: #FFF9F7;
+@iceCreamOrange: #EDD6C2;
