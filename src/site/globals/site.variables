@@ -17,6 +17,7 @@
 @sidebarBackground     : #171A21;
 @sidebarMenuItemActiveBackground: lighten(#242833, 10%);
 @sidebarMenuSectionColor: @invertedUnselectedTextColor;
+@sidebarMenuSectionSeparatorColor: rgba(255,255,255,0.1);
 @sidebarMenuItemColor  : @invertedLightTextColor;
 @sidebarMenuActionColor : @invertedDisabledTextColor;
 @sidebarMenuActionHoverColor : @invertedLightTextColor;
