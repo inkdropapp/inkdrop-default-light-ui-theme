@@ -7,9 +7,6 @@
 @importGoogleFonts : false;
 @useCustomScrollbars: false;
 
-@primaryColor: #4F8EFF;
-@linkHoverColor: @primaryColor;
-
 
 /*-------------------
       Side Bar
