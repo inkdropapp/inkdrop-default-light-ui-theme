@@ -502,8 +502,8 @@
 @whiteBorderColor              : rgba(255, 255, 255, 0.1);
 @selectedWhiteBorderColor      : rgba(255, 255, 255, 0.8);
 
-@solidWhiteBorderColor         : #555555;
-@selectedSolidWhiteBorderColor : #999999;
+@solidWhiteBorderColor         : #999999;
+@selectedSolidWhiteBorderColor : #cccccc;
 
 
 /*-------------------
