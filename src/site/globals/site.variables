@@ -12,7 +12,8 @@
       Side Bar
 --------------------*/
 @sidebarBackground     : #171A21;
-@sidebarMenuItemActiveBackground: lighten(#242833, 10%);
+@sidebarMenuItemInactiveBackground: hsl(var(--hsl-slate-600) / 70%);
+@sidebarMenuItemActiveBackground: hsl(var(--hsl-blue-300) / 50%);
 @sidebarMenuSectionColor: @invertedUnselectedTextColor;
 @sidebarMenuSectionSeparatorColor: rgba(255,255,255,0.1);
 @sidebarMenuItemColor  : @invertedLightTextColor;
@@ -44,11 +45,12 @@
 @noteListViewItemSeparatorBorder: 1px solid @whiteDown;
 @noteListViewItemDateColor: @primaryColor;
 @noteListViewItemTagColor: @blueFocus;
+@noteListViewItemInactiveBackground: hsl(var(--hsl-sky-800) / 20%);
 @noteListViewItemActiveBackground: @primaryColor;
 @noteListViewItemActiveColor: @invertedTextColor;
 @noteListViewItemActiveDateColor: @invertedTextColor;
 @noteListViewItemActiveTagColor: @invertedTextColor;
-@noteListViewItemFocusInnerShadow: inset 0 0 4px rgba(0,0,0,0.8);
+@noteListViewItemFocusInnerShadow: none;
 @noteSearchBarBackground: @noteListBarBackground;
 @noteSearchBarBorderBottom: rgba(255,255,255,0.8);
 @noteSearchBarInputBorder: 1px solid transparent;

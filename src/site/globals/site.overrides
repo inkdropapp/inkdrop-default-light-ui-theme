@@ -952,6 +952,7 @@
         Side Bar
   --------------------*/
   --sidebar-background: @sidebarBackground;
+  --sidebar-menu-item-inactive-background: @sidebarMenuItemInactiveBackground;
   --sidebar-menu-item-active-background: @sidebarMenuItemActiveBackground;
   --sidebar-menu-section-color: @sidebarMenuSectionColor;
   --sidebar-menu-section-separator-color: @sidebarMenuSectionSeparatorColor;
@@ -983,6 +984,7 @@
   --note-list-view-item-separator-border: @noteListViewItemSeparatorBorder;
   --note-list-view-item-date-color: @noteListViewItemDateColor;
   --note-list-view-item-tag-color: @noteListViewItemTagColor;
+  --note-list-view-item-inactive-background: @noteListViewItemInactiveBackground;
   --note-list-view-item-active-background: @noteListViewItemActiveBackground;
   --note-list-view-item-active-color: @noteListViewItemActiveColor;
   --note-list-view-item-active-date-color: @noteListViewItemActiveDateColor;
