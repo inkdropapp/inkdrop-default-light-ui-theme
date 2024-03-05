@@ -147,7 +147,7 @@
 /* Colors */
 @redTextColor: @white;
 @orangeTextColor: @white;
-@yellowTextColor: @white;
+@yellowTextColor: @mutedTextColor;
 @oliveTextColor: @white;
 @greenTextColor: @white;
 @tealTextColor: @white;
