@@ -82,10 +82,10 @@
 /*-------------------
       Task Icons
 --------------------*/
-@taskIconActive: darkgray;
-@taskIconOnHold: orange;
-@taskIconCompleted: limegreen;
-@taskIconDropped: lightcoral;
+@taskIconActive: hsl(var(--hsl-slate-400));
+@taskIconOnHold: hsl(var(--hsl-amber-500));
+@taskIconCompleted: hsl(var(--hsl-emerald-500));
+@taskIconDropped: hsl(var(--hsl-rose-400));
 
 /*-------------------
   Task Progress View
