@@ -691,6 +691,10 @@ input::selection {
         Global Overrides
 *******************************/
 
+.sidebar-layout-content {
+  color-scheme: dark;
+}
+
 /*******************************
          Site Overrides
 *******************************/
