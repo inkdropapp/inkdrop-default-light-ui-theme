@@ -33,24 +33,24 @@
   outline-style: var(--focused-outline-style);
   border: none;
   vertical-align: @verticalAlign;
-  background: @background;
-  color: @textColor;
+  background: var(--button-background, @background);
+  color: var(--button-text-color, @textColor);
 
   font-family: @fontFamily;
 
-  margin: 0em @horizontalMargin @verticalMargin 0em;
-  padding: @verticalPadding @horizontalPadding (@verticalPadding + @shadowOffset);
+  margin: var(--button-margin, 0em @horizontalMargin @verticalMargin 0em);
+  padding: var(--button-padding, @verticalPadding @horizontalPadding (@verticalPadding + @shadowOffset));
 
   text-transform: @textTransform;
-  text-shadow: @textShadow;
-  font-weight: @fontWeight;
-  line-height: @lineHeight;
+  text-shadow: var(--button-text-shadow, @textShadow);
+  font-weight: var(--button-font-weight, @fontWeight);
+  line-height: var(--button-line-height, @lineHeight);
   font-style: normal;
   text-align: center;
   text-decoration: none;
 
-  border-radius: @borderRadius;
-  box-shadow: @boxShadow;
+  border-radius: var(--default-border-radius, @borderRadius);
+  box-shadow: var(--button-box-shadow, @boxShadow);
 
   user-select: none;
   transition: @transition;
@@ -69,14 +69,14 @@
 ---------------*/
 
 .ui.button:hover {
-  background-color: @hoverBackgroundColor;
-  background-image: @hoverBackgroundImage;
-  box-shadow: @hoverBoxShadow;
-  color: @hoverColor;
+  background-color: var(--button-hover-background-color, @hoverBackgroundColor);
+  background-image: var(--button-hover-background-image, @hoverBackgroundImage);
+  box-shadow: var(--button-hover-box-shadow, @hoverBoxShadow);
+  color: var(--button-hover-color, @hoverColor);
 }
 
 .ui.button:hover .icon {
-  opacity: @iconHoverOpacity;
+  opacity: var(--button-hover-icon-opacity, @iconHoverOpacity);
 }
 
 /*--------------
@@ -84,16 +84,16 @@
 ---------------*/
 
 .ui.button:focus {
-  background-color: @focusBackgroundColor;
-  color: @focusColor;
-  background-image: @focusBackgroundImage !important;
-  box-shadow: @focusBoxShadow !important;
+  background-color: var(--button-focus-background-color, @focusBackgroundColor);
+  color: var(--button-focus-color, @focusColor);
+  background-image: var(--button-focus-background-image, @focusBackgroundImage) !important;
+  box-shadow: var(--button-focus-boxshadow, @focusBoxShadow) !important;
   outline-offset: var(--focused-outline-offset);
   outline-color: var(--focused-outline-color);
 }
 
 .ui.button:focus .icon {
-  opacity: @iconFocusOpacity;
+  opacity: var(--button-icon-focus-opacity, @iconFocusOpacity);
 }
 
 /*--------------
@@ -102,10 +102,10 @@
 
 .ui.button:active,
 .ui.active.button:active {
-  background-color: @downBackgroundColor;
-  background-image: @downBackgroundImage;
-  color: @downColor;
-  box-shadow: @downBoxShadow;
+  background-color: var(--button-down-background-color, @downBackgroundColor);
+  background-image: var(--button-down-background-image, @downBackgroundImage);
+  color: var(--button-down-color);
+  box-shadow: var(--button-down-box-shadow, @downBoxShadow);
 }
 
 /*--------------
@@ -113,19 +113,19 @@
 ---------------*/
 
 .ui.active.button {
-  background-color: @activeBackgroundColor;
-  background-image: @activeBackgroundImage;
-  box-shadow: @activeBoxShadow;
-  color: @activeColor;
+  background-color: var(--button-active-background-color, @activeBackgroundColor);
+  background-image: var(--button-active-background-image, @activeBackgroundImage);
+  box-shadow: var(--button-active-box-shadow, @activeBoxShadow);
+  color: var(--button-active-color, @activeColor);
 }
 .ui.active.button:hover {
-  background-color: @activeHoverBackgroundColor;
-  background-image: @activeHoverBackgroundImage;
-  color: @activeHoverColor;
+  background-color: var(--button-active-hover-background-color, @activeHoverBackgroundColor);
+  background-image: var(--button-active-hover-background-image, @activeHoverBackgroundImage);
+  color: var(--button-active-hover-color, @activeHoverColor);
 }
 .ui.active.button:active {
-  background-color: @activeBackgroundColor;
-  background-image: @activeBackgroundImage;
+  background-color: var(--button-active-background-color, @activeBackgroundColor);
+  background-image: var(--button-active-background-image, @activeBackgroundImage);
 }
 
 
@@ -139,9 +139,9 @@
   cursor: default;
   text-shadow: none !important;
   color: transparent !important;
-  opacity: @loadingOpacity;
-  pointer-events: @loadingPointerEvents;
-  transition: @loadingTransition;
+  opacity: var(--button-loading-opacity, @loadingOpacity);
+  pointer-events: var(--button-loading-pointer-events, @loadingPointerEvents);
+  transition: var(--button-loading-transition, @loadingTransition);
 }
 .ui.loading.button:before {
   position: absolute;
@@ -149,12 +149,12 @@
   top: 50%;
   left: 50%;
 
-  margin: @loaderMargin;
-  width: @loaderSize;
-  height: @loaderSize;
+  margin: var(--loader-margin);
+  width: var(--loader-size);
+  height: var(--loader-size);
 
-  border-radius: @circularRadius;
-  border: @loaderLineWidth solid @invertedLoaderFillColor;
+  border-radius: var(--circular-radius);
+  border: var(--loader-line-width) solid var(--inverted-loader-fill-color);
 }
 .ui.loading.button:after {
   position: absolute;

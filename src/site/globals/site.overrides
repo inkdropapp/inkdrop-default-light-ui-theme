@@ -949,6 +949,61 @@
   --dark-white-active: darken(@darkWhite, 5);
 
   /*-------------------
+        Button
+  --------------------*/
+  --button-background: #E0E1E2 none;
+  --button-text-color: rgba(0, 0, 0, 0.6);
+  --button-margin: 0em 0.25em 0em 0em;
+  --button-padding: var(--input-vertical-padding) var(--input-horizontal-padding);
+  --button-text-shadow: none;
+  --button-box-shadow: 0px 0px 0px 1px transparent inset;
+  --button-font-weight: 600;
+  --button-line-height: 1em;
+
+  /* Hovered */
+  --button-hover-background-color: #CACBCD;
+  --button-hover-background-image: none;
+  --button-hover-box-shadow: var(--button-box-shadow);
+  --button-hover-color: var(--hovered-text-color);
+  --button-hover-icon-opacity: 0.85;
+
+  /* Focused */
+  --button-focus-background-color: var(--button-hover-background-color);
+  --button-focus-background-image: '';
+  --button-focus-boxshadow: '';
+  --button-focus-color: var(--hovered-text-color);
+  --button-icon-focus-opacity: 0.85;
+
+  /* Disabled */
+  --button-disabled-background-image: none;
+  --button-disabled-box-shadow: none;
+
+  /* Pressed Down */
+  --button-down-background-color: #babbbc;
+  --button-down-background-image: '';
+  --button-down-pressed-shadow: none;
+  --button-down-box-shadow: var(--button-box-shadow), none;
+  --button-down-color: var(--pressed-text-color);
+
+  /* Active */
+  --button-active-background-color: #C0C1C2;
+  --button-active-background-image: none;
+  --button-active-color: var(--selected-text-color);
+  --button-active-box-shadow: var(--button-box-shadow);
+
+  /* Active + Hovered */
+  --button-active-hover-background-color: var(--button-active-background-color);
+  --button-active-hover-background-image: none;
+  --button-active-hover-color: var(--button-active-color);
+  --button-active-hover-box-shadow: var(--button-active-box-shadow);
+
+  /* Loading */
+  --button-loading-opacity: 1;
+  --button-loading-pointer-events: auto;
+  --button-loading-transition: all 0s linear, opacity var(--default-duration) var(--default-easing);
+
+
+  /*-------------------
         Side Bar
   --------------------*/
   --sidebar-background: @sidebarBackground;
