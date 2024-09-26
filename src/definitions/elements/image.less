@@ -13,7 +13,7 @@
             Theme
 *******************************/
 
-@type    : 'element';
+@type : 'element';
 @element : 'image';
 
 @import (multiple) '../../theme.config';
@@ -51,12 +51,14 @@ img.ui.image {
 .ui.hidden.image {
   display: none;
 }
+
 .ui.hidden.transition.images,
 .ui.hidden.transition.image {
   display: block;
   visibility: hidden;
 }
-.ui.images > .hidden.transition {
+
+.ui.images>.hidden.transition {
   display: inline-block;
   visibility: hidden;
 }
@@ -65,7 +67,7 @@ img.ui.image {
 .ui.disabled.images,
 .ui.disabled.image {
   cursor: default;
-  opacity: @disabledOpacity;
+  opacity: var(--disabled-opacity, @disabledOpacity);
 }
 
 
@@ -95,6 +97,7 @@ img.ui.image {
   display: inline-block;
   vertical-align: top;
 }
+
 .ui.middle.aligned.images .image,
 .ui.middle.aligned.image,
 .ui.middle.aligned.image svg,
@@ -102,6 +105,7 @@ img.ui.image {
   display: inline-block;
   vertical-align: middle;
 }
+
 .ui.bottom.aligned.images .image,
 .ui.bottom.aligned.image,
 .ui.bottom.aligned.image svg,
@@ -116,8 +120,8 @@ img.ui.image {
 
 .ui.rounded.images .image,
 .ui.rounded.image,
-.ui.rounded.images .image > *,
-.ui.rounded.image > * {
+.ui.rounded.images .image>*,
+.ui.rounded.image>* {
   border-radius: @roundedBorderRadius;
 }
 
@@ -145,11 +149,9 @@ img.ui.bordered.image {
 
 .ui.circular.images .image,
 .ui.circular.image,
-.ui.circular.images .image > *,
-.ui.circular.image > * {
-  -webkit-border-radius: @circularRadius;
-  -moz-border-radius: @circularRadius;
-  border-radius: @circularRadius;
+.ui.circular.images .image>*,
+.ui.circular.image>* {
+  border-radius: var(--circular-radius, @circularRadius);
 }
 
 /*--------------
@@ -184,9 +186,7 @@ img.ui.bordered.image {
   width: @avatarSize;
   height: @avatarSize;
 
-  -webkit-border-radius: @circularRadius;
-  -moz-border-radius: @circularRadius;
-  border-radius: @circularRadius;
+  border-radius: var(--circular-radius, @circularRadius);
 }
 
 /*-------------------
@@ -219,6 +219,7 @@ img.ui.bordered.image {
   margin-right: @floatedHorizontalMargin;
   margin-bottom: @floatedVerticalMargin;
 }
+
 .ui.right.floated.images,
 .ui.right.floated.image {
   float: right;
@@ -251,6 +252,7 @@ img.ui.bordered.image {
   height: auto;
   font-size: @mini;
 }
+
 .ui.tiny.images .image,
 .ui.tiny.images img,
 .ui.tiny.images svg,
@@ -259,6 +261,7 @@ img.ui.bordered.image {
   height: auto;
   font-size: @tiny;
 }
+
 .ui.small.images .image,
 .ui.small.images img,
 .ui.small.images svg,
@@ -267,6 +270,7 @@ img.ui.bordered.image {
   height: auto;
   font-size: @small;
 }
+
 .ui.medium.images .image,
 .ui.medium.images img,
 .ui.medium.images svg,
@@ -275,6 +279,7 @@ img.ui.bordered.image {
   height: auto;
   font-size: @medium;
 }
+
 .ui.large.images .image,
 .ui.large.images img,
 .ui.large.images svg,
@@ -283,6 +288,7 @@ img.ui.bordered.image {
   height: auto;
   font-size: @large;
 }
+
 .ui.big.images .image,
 .ui.big.images img,
 .ui.big.images svg,
@@ -291,6 +297,7 @@ img.ui.bordered.image {
   height: auto;
   font-size: @big;
 }
+
 .ui.huge.images .image,
 .ui.huge.images img,
 .ui.huge.images svg,
@@ -299,6 +306,7 @@ img.ui.bordered.image {
   height: auto;
   font-size: @huge;
 }
+
 .ui.massive.images .image,
 .ui.massive.images img,
 .ui.massive.images svg,
@@ -319,8 +327,8 @@ img.ui.bordered.image {
 }
 
 .ui.images .image,
-.ui.images > img,
-.ui.images > svg {
+.ui.images>img,
+.ui.images>svg {
   display: inline-block;
   margin: 0em @imageHorizontalMargin @imageVerticalMargin;
 }
