@@ -1215,6 +1215,12 @@
   --label-basic-hover-box-shadow: var(--label-basic-box-shadow);
 
   /*-------------------
+        Loader
+  --------------------*/
+  --loader-shape-border-color: var(--loader-line-color) transparent transparent;
+  --loader-text-color: var(--text-color);
+
+  /*-------------------
         Side Bar
   --------------------*/
   --sidebar-background: @sidebarBackground;
