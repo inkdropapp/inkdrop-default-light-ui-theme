@@ -42,8 +42,8 @@
 ---------------*/
 
 .ui.divider:not(.vertical):not(.horizontal) {
-  border-top: var(--divider-border-shadow-width) solid var(--divider-border-shadow-color);
-  border-bottom: var(--divider-border-highlight-width) solid var(--divider-border-highlight-color);
+  border-top: var(--divider-border-shadow-width, @shadowWidth) solid var(--divider-border-shadow-color, @shadowColor);
+  border-bottom: var(--divider-border-highlight-width, @highlightWidth) solid var(--divider-border-highlight-color, @highlightColor);
 }
 
 /*--------------
@@ -114,8 +114,8 @@
   content: '';
   z-index: 3;
 
-  border-left: var(--divider-border-shadow-width) solid var(--divider-border-shadow-color);
-  border-right: var(--divider-border-highlight-width) solid var(--divider-border-highlight-color);
+  border-left: var(--divider-border-shadow-width, @shadowWidth) solid var(--divider-border-shadow-color, @shadowColor);
+  border-right: var(--divider-border-highlight-width, @highlightWidth) solid var(--divider-border-highlight-color, @highlightColor);
 
   width: 0%;
   height: @verticalDividerHeight;
