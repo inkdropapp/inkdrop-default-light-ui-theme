@@ -1182,6 +1182,39 @@
   --input-placeholder-error-focus-color: #C26765;
 
   /*-------------------
+        Label
+  --------------------*/
+  --label-background-color: #E8E8E8;
+  --label-background-image: none;
+  --label-text-color: var(--muted-text-color);
+  --label-font-weight: var(--font-weights-medium);
+  --label-border: 0px solid transparent;
+  --label-border-radius: var(--absolute-border-radius);
+
+  --label-hover-background-color: #E0E0E0;
+  --label-hover-background-image: none;
+  --label-hover-text-color: var(--hovered-text-color);
+
+  --label-active-background-color: #D0D0D0;
+  --label-active-background-image: none;
+  --label-active-text-color: var(--selected-text-color);
+
+  --label-active-hover-background-color: #C8C8C8;
+  --label-active-hover-background-image: none;
+  --label-active-hover-text-color: var(--selected-text-color);
+
+  --label-basic-background: none var(--white);
+  --label-basic-border-width: 1px;
+  --label-basic-border-color: var(--border-color);
+  --label-basic-border: var(--label-basic-border-width) solid var(--label-basic-border-color);
+  --label-basic-text-color: var(--text-color);
+  --label-basic-box-shadow: none;
+  --label-basic-hover-background: var(--label-basic-background);
+  --label-basic-hover-color: var(--link-hover-color);
+  --label-basic-hover-border: var(--label-basic-border);
+  --label-basic-hover-box-shadow: var(--label-basic-box-shadow);
+
+  /*-------------------
         Side Bar
   --------------------*/
   --sidebar-background: @sidebarBackground;
