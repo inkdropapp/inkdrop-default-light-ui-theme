@@ -487,140 +487,72 @@
 /*--- Standard ---*/
 .ui.primary.buttons .button,
 .ui.primary.button {
-  background-color: @primaryColor;
-  color: @primaryTextColor;
-  text-shadow: @primaryTextShadow;
-  background-image: @coloredBackgroundImage;
+  background-color: var(--primary-button-background-color, @primaryColor);
+  color: var(--primary-button-text-color, @primaryTextColor);
+  text-shadow: var(--primary-button-text-shadow, @primaryTextShadow);
+  background-image: var(--primary-button-background-image, @coloredBackgroundImage);
 }
 .ui.primary.button {
-  box-shadow: @coloredBoxShadow;
+  box-shadow: var(--primary-button-box-shadow, @coloredBoxShadow);
 }
 .ui.primary.buttons .button:hover,
 .ui.primary.button:hover {
-  background-color: @primaryColorHover;
-  color: @primaryTextColor;
-  text-shadow: @primaryTextShadow;
+  background-color: var(--primary-button-hover-background-color, @primaryColorHover);
+  color: var(--primary-button-text-color, @primaryTextColor);
+  text-shadow: var(--primary-button-text-shadow, @primaryTextShadow);
 }
 .ui.primary.buttons .button:focus,
 .ui.primary.button:focus {
-  background-color: @primaryColorFocus;
-  color: @primaryTextColor;
-  text-shadow: @primaryTextShadow;
+  background-color: var(--primary-button-focus-background-color, @primaryColorFocus);
+  color: var(--primary-button-text-color, @primaryTextColor);
+  text-shadow: var(--primary-button-text-shadow, @primaryTextShadow);
 }
 .ui.primary.buttons .button:active,
 .ui.primary.button:active {
-  background-color: @primaryColorDown;
-  color: @primaryTextColor;
-  text-shadow: @primaryTextShadow;
+  background-color: var(--primary-button-down-background-color, @primaryColorDown);
+  color: var(--primary-button-text-color, @primaryTextColor);
+  text-shadow: var(--primary-button-text-shadow, @primaryTextShadow);
 }
 .ui.primary.buttons .active.button,
 .ui.primary.buttons .active.button:active,
 .ui.primary.active.button,
 .ui.primary.button .active.button:active {
-  background-color: @primaryColorActive;
-  color: @primaryTextColor;
-  text-shadow: @primaryTextShadow;
+  background-color: var(--primary-button-active-background-color, @primaryColorActive);
+  color: var(--primary-button-text-color, @primaryTextColor);
+  text-shadow: var(--primary-button-text-shadow, @primaryTextShadow);
 }
 
 /* Basic */
 .ui.basic.primary.buttons .button,
 .ui.basic.primary.button {
-  box-shadow: 0px 0px 0px @basicBorderSize @primaryColor inset !important;
-  color: @primaryColor !important;
+  box-shadow: var(--basic-primary-button-box-shadow, 0px 0px 0px @basicBorderSize @primaryColor inset) !important;
+  color: var(--primary-color, @primaryColor) !important;
 }
 .ui.basic.primary.buttons .button:hover,
 .ui.basic.primary.button:hover {
   background: transparent !important;
-  box-shadow: 0px 0px 0px @basicColoredBorderSize @primaryColorHover inset !important;
-  color: @primaryColorHover !important;
+  box-shadow: var(--basic-primary-button-hover-box-shadow, 0px 0px 0px @basicColoredBorderSize @primaryColorHover inset) !important;
+  color: var(--primary-color-hover, @primaryColorHover) !important;
 }
 .ui.basic.primary.buttons .button:focus,
 .ui.basic.primary.button:focus {
   background: transparent !important;
-  box-shadow: 0px 0px 0px @basicColoredBorderSize @primaryColorFocus inset !important;
-  color: @primaryColorHover !important;
+  box-shadow: var(--basic-primary-button-focus-box-shadow, 0px 0px 0px @basicColoredBorderSize @primaryColorFocus inset) !important;
+  color: var(--primary-color-hover, @primaryColorHover) !important;
 }
 .ui.basic.primary.buttons .active.button,
 .ui.basic.primary.active.button {
   background: transparent !important;
-  box-shadow: 0px 0px 0px @basicColoredBorderSize @primaryColorActive inset !important;
-  color: @primaryColorDown !important;
+  box-shadow: var(--basic-primary-button-active-box-shadow, 0px 0px 0px @basicColoredBorderSize @primaryColorActive inset) !important;
+  color: var(--primary-color-down, @primaryColorDown) !important;
 }
 .ui.basic.primary.buttons .button:active,
 .ui.basic.primary.button:active {
-  box-shadow: 0px 0px 0px @basicColoredBorderSize @primaryColorDown inset !important;
-  color: @primaryColorDown !important;
+  box-shadow: var(--basic-primary-button-down-box-shadow, 0px 0px 0px @basicColoredBorderSize @primaryColorDown inset) !important;
+  color: var(--primary-color-down, @primaryColorDown) !important;
 }
 .ui.buttons:not(.vertical) > .basic.primary.button:not(:first-child) {
-  margin-left: -@basicColoredBorderSize;
-}
-
-/* Inverted */
-.ui.inverted.primary.buttons .button,
-.ui.inverted.primary.button {
-  background-color: transparent;
-  box-shadow: 0px 0px 0px @invertedBorderSize @lightPrimaryColor inset !important;
-  color: @lightPrimaryColor;
-}
-.ui.inverted.primary.buttons .button:hover,
-.ui.inverted.primary.button:hover,
-.ui.inverted.primary.buttons .button:focus,
-.ui.inverted.primary.button:focus,
-.ui.inverted.primary.buttons .button.active,
-.ui.inverted.primary.button.active,
-.ui.inverted.primary.buttons .button:active,
-.ui.inverted.primary.button:active {
-  box-shadow: none !important;
-  color: @lightPrimaryTextColor;
-}
-.ui.inverted.primary.buttons .button:hover,
-.ui.inverted.primary.button:hover {
-  background-color: @lightPrimaryColorHover;
-}
-.ui.inverted.primary.buttons .button:focus,
-.ui.inverted.primary.button:focus {
-  background-color: @lightPrimaryColorFocus;
-}
-.ui.inverted.primary.buttons .active.button,
-.ui.inverted.primary.active.button {
-  background-color: @lightPrimaryColorActive;
-}
-.ui.inverted.primary.buttons .button:active,
-.ui.inverted.primary.button:active {
-  background-color: @lightPrimaryColorDown;
-}
-
-/* Inverted Basic */
-.ui.inverted.primary.basic.buttons .button,
-.ui.inverted.primary.buttons .basic.button,
-.ui.inverted.primary.basic.button {
-  background-color: transparent;
-  box-shadow: @basicInvertedBoxShadow !important;
-  color: @white !important;
-}
-.ui.inverted.primary.basic.buttons .button:hover,
-.ui.inverted.primary.buttons .basic.button:hover,
-.ui.inverted.primary.basic.button:hover {
-  box-shadow: 0px 0px 0px @invertedBorderSize @lightPrimaryColorHover inset !important;
-  color: @lightPrimaryColor !important;
-}
-.ui.inverted.primary.basic.buttons .button:focus,
-.ui.inverted.primary.basic.buttons .button:focus,
-.ui.inverted.primary.basic.button:focus {
-  box-shadow: 0px 0px 0px @invertedBorderSize @lightPrimaryColorFocus inset !important;
-  color: @lightPrimaryColor !important;
-}
-.ui.inverted.primary.basic.buttons .active.button,
-.ui.inverted.primary.buttons .basic.active.button,
-.ui.inverted.primary.basic.active.button {
-  box-shadow: 0px 0px 0px @invertedBorderSize @lightPrimaryColorActive inset !important;
-  color: @lightPrimaryColor !important;
-}
-.ui.inverted.primary.basic.buttons .button:active,
-.ui.inverted.primary.buttons .basic.button:active,
-.ui.inverted.primary.basic.button:active {
-  box-shadow: 0px 0px 0px @invertedBorderSize @lightPrimaryColorDown inset !important;
-  color: @lightPrimaryColor !important;
+  margin-left: calc(-1 * var(--basic-colored-border-size, @basicColoredBorderSize));
 }
 
 /*-------------------
@@ -630,140 +562,72 @@
 /* Standard */
 .ui.secondary.buttons .button,
 .ui.secondary.button {
-  background-color: @secondaryColor;
-  color: @secondaryTextColor;
-  text-shadow: @secondaryTextShadow;
-  background-image: @coloredBackgroundImage;
+  background-color: var(--secondary-button-background-color, @secondaryColor);
+  color: var(--secondary-button-text-color, @secondaryTextColor);
+  text-shadow: var(--secondary-button-text-shadow, @secondaryTextShadow);
+  background-image: var(--secondary-button-background-image, @coloredBackgroundImage);
 }
 .ui.secondary.button {
-  box-shadow: @coloredBoxShadow;
+  box-shadow: var(--secondary-button-box-shadow, @coloredBoxShadow);
 }
 .ui.secondary.buttons .button:hover,
 .ui.secondary.button:hover {
-  background-color: @secondaryColorHover;
-  color: @secondaryTextColor;
-  text-shadow: @secondaryTextShadow;
+  background-color: var(--secondary-button-hover-background-color, @secondaryColorHover);
+  color: var(--secondary-button-text-color, @secondaryTextColor);
+  text-shadow: var(--secondary-button-text-shadow, @secondaryTextShadow);
 }
 .ui.secondary.buttons .button:focus,
 .ui.secondary.button:focus {
-  background-color: @secondaryColorFocus;
-  color: @secondaryTextColor;
-  text-shadow: @secondaryTextShadow;
+  background-color: var(--secondary-button-focus-background-color, @secondaryColorFocus);
+  color: var(--secondary-button-text-color, @secondaryTextColor);
+  text-shadow: var(--secondary-button-text-shadow, @secondaryTextShadow);
 }
 .ui.secondary.buttons .button:active,
 .ui.secondary.button:active {
-  background-color: @secondaryColorDown;
-  color: @secondaryTextColor;
-  text-shadow: @secondaryTextShadow;
+  background-color: var(--secondary-button-down-background-color, @secondaryColorDown);
+  color: var(--secondary-button-text-color, @secondaryTextColor);
+  text-shadow: var(--secondary-button-text-shadow, @secondaryTextShadow);
 }
 .ui.secondary.buttons .active.button,
 .ui.secondary.buttons .active.button:active,
 .ui.secondary.active.button,
 .ui.secondary.button .active.button:active {
-  background-color: @secondaryColorActive;
-  color: @secondaryTextColor;
-  text-shadow: @secondaryTextShadow;
+  background-color: var(--secondary-button-active-background-color, @secondaryColorActive);
+  color: var(--secondary-button-text-color, @secondaryTextColor);
+  text-shadow: var(--secondary-button-text-shadow, @secondaryTextShadow);
 }
 
 /* Basic */
 .ui.basic.secondary.buttons .button,
 .ui.basic.secondary.button {
-  box-shadow: 0px 0px 0px @basicBorderSize @secondaryColor inset !important;
-  color: @secondaryColor !important;
+  box-shadow: var(--basic-secondary-button-box-shadow, 0px 0px 0px @basicBorderSize @secondaryColor inset) !important;
+  color: var(--secondary-color, @secondaryColor) !important;
 }
 .ui.basic.secondary.buttons .button:hover,
 .ui.basic.secondary.button:hover {
   background: transparent !important;
-  box-shadow: 0px 0px 0px @basicColoredBorderSize @secondaryColorHover inset !important;
-  color: @secondaryColorHover !important;
+  box-shadow: var(--basic-secondary-button-hover-box-shadow, 0px 0px 0px @basicColoredBorderSize @secondaryColorHover inset) !important;
+  color: var(--secondary-color-hover, @secondaryColorHover) !important;
 }
 .ui.basic.secondary.buttons .button:focus,
 .ui.basic.secondary.button:focus {
   background: transparent !important;
-  box-shadow: 0px 0px 0px @basicColoredBorderSize @secondaryColorFocus inset !important;
-  color: @secondaryColorHover !important;
+  box-shadow: var(--basic-secondary-button-focus-box-shadow, 0px 0px 0px @basicColoredBorderSize @secondaryColorFocus inset) !important;
+  color: var(--secondary-color-hover, @secondaryColorHover) !important;
 }
 .ui.basic.secondary.buttons .active.button,
 .ui.basic.secondary.active.button {
   background: transparent !important;
-  box-shadow: 0px 0px 0px @basicColoredBorderSize @secondaryColorActive inset !important;
-  color: @secondaryColorDown !important;
+  box-shadow: var(--basic-secondary-button-active-box-shadow, 0px 0px 0px @basicColoredBorderSize @secondaryColorActive inset) !important;
+  color: var(--secondary-color-down, @secondaryColorDown) !important;
 }
 .ui.basic.secondary.buttons .button:active,
 .ui.basic.secondary.button:active {
-  box-shadow: 0px 0px 0px @basicColoredBorderSize @secondaryColorDown inset !important;
-  color: @secondaryColorDown !important;
+  box-shadow: var(--basic-secondary-button-down-box-shadow, 0px 0px 0px @basicColoredBorderSize @secondaryColorDown inset) !important;
+  color: var(--secondary-color-down, @secondaryColorDown) !important;
 }
-.ui.buttons:not(.vertical) > .basic.primary.button:not(:first-child) {
-  margin-left: -@basicColoredBorderSize;
-}
-
-/* Inverted */
-.ui.inverted.secondary.buttons .button,
-.ui.inverted.secondary.button {
-  background-color: transparent;
-  box-shadow: 0px 0px 0px @invertedBorderSize @lightSecondaryColor inset !important;
-  color: @lightSecondaryColor;
-}
-.ui.inverted.secondary.buttons .button:hover,
-.ui.inverted.secondary.button:hover,
-.ui.inverted.secondary.buttons .button:focus,
-.ui.inverted.secondary.button:focus,
-.ui.inverted.secondary.buttons .button.active,
-.ui.inverted.secondary.button.active,
-.ui.inverted.secondary.buttons .button:active,
-.ui.inverted.secondary.button:active {
-  box-shadow: none !important;
-  color: @lightSecondaryTextColor;
-}
-.ui.inverted.secondary.buttons .button:hover,
-.ui.inverted.secondary.button:hover {
-  background-color: @lightSecondaryColorHover;
-}
-.ui.inverted.secondary.buttons .button:focus,
-.ui.inverted.secondary.button:focus {
-  background-color: @lightSecondaryColorFocus;
-}
-.ui.inverted.secondary.buttons .active.button,
-.ui.inverted.secondary.active.button {
-  background-color: @lightSecondaryColorActive;
-}
-.ui.inverted.secondary.buttons .button:active,
-.ui.inverted.secondary.button:active {
-  background-color: @lightSecondaryColorDown;
-}
-
-/* Inverted Basic */
-.ui.inverted.secondary.basic.buttons .button,
-.ui.inverted.secondary.buttons .basic.button,
-.ui.inverted.secondary.basic.button {
-  background-color: transparent;
-  box-shadow: @basicInvertedBoxShadow !important;
-  color: @white !important;
-}
-.ui.inverted.secondary.basic.buttons .button:hover,
-.ui.inverted.secondary.buttons .basic.button:hover,
-.ui.inverted.secondary.basic.button:hover {
-  box-shadow: 0px 0px 0px @invertedBorderSize @lightSecondaryColorHover inset !important;
-  color: @lightSecondaryColor !important;
-}
-.ui.inverted.secondary.basic.buttons .button:focus,
-.ui.inverted.secondary.basic.buttons .button:focus,
-.ui.inverted.secondary.basic.button:focus {
-  box-shadow: 0px 0px 0px @invertedBorderSize @lightSecondaryColorFocus inset !important;
-  color: @lightSecondaryColor !important;
-}
-.ui.inverted.secondary.basic.buttons .active.button,
-.ui.inverted.secondary.buttons .basic.active.button,
-.ui.inverted.secondary.basic.active.button {
-  box-shadow: 0px 0px 0px @invertedBorderSize @lightSecondaryColorActive inset !important;
-  color: @lightSecondaryColor !important;
-}
-.ui.inverted.secondary.basic.buttons .button:active,
-.ui.inverted.secondary.buttons .basic.button:active,
-.ui.inverted.secondary.basic.button:active {
-  box-shadow: 0px 0px 0px @invertedBorderSize @lightSecondaryColorDown inset !important;
-  color: @lightSecondaryColor !important;
+.ui.buttons:not(.vertical) > .basic.secondary.button:not(:first-child) {
+  margin-left: calc(-1 * var(--basic-colored-border-size, @basicColoredBorderSize));
 }
 
 /*---------------
@@ -773,72 +637,72 @@
 /* Standard */
 .ui.positive.buttons .button,
 .ui.positive.button {
-  background-color: @positiveColor;
-  color: @positiveTextColor;
-  text-shadow: @positiveTextShadow;
-  background-image: @coloredBackgroundImage;
+  background-color: var(--positive-button-background-color, @positiveColor);
+  color: var(--positive-button-text-color, @positiveTextColor);
+  text-shadow: var(--positive-button-text-shadow, @positiveTextShadow);
+  background-image: var(--positive-button-background-image, @coloredBackgroundImage);
 }
 .ui.positive.button {
-  box-shadow: @coloredBoxShadow;
+  box-shadow: var(--positive-button-box-shadow, @coloredBoxShadow);
 }
 .ui.positive.buttons .button:hover,
 .ui.positive.button:hover {
-  background-color: @positiveColorHover;
-  color: @positiveTextColor;
-  text-shadow: @positiveTextShadow;
+  background-color: var(--positive-button-hover-background-color, @positiveColorHover);
+  color: var(--positive-button-text-color, @positiveTextColor);
+  text-shadow: var(--positive-button-text-shadow, @positiveTextShadow);
 }
 .ui.positive.buttons .button:focus,
 .ui.positive.button:focus {
-  background-color: @positiveColorFocus;
-  color: @positiveTextColor;
-  text-shadow: @positiveTextShadow;
+  background-color: var(--positive-button-focus-background-color, @positiveColorFocus);
+  color: var(--positive-button-text-color, @positiveTextColor);
+  text-shadow: var(--positive-button-text-shadow, @positiveTextShadow);
 }
 .ui.positive.buttons .button:active,
 .ui.positive.button:active {
-  background-color: @positiveColorDown;
-  color: @positiveTextColor;
-  text-shadow: @positiveTextShadow;
+  background-color: var(--positive-button-down-background-color, @positiveColorDown);
+  color: var(--positive-button-text-color, @positiveTextColor);
+  text-shadow: var(--positive-button-text-shadow, @positiveTextShadow);
 }
 .ui.positive.buttons .active.button,
 .ui.positive.buttons .active.button:active,
 .ui.positive.active.button,
 .ui.positive.button .active.button:active {
-  background-color: @positiveColorActive;
-  color: @positiveTextColor;
-  text-shadow: @positiveTextShadow;
+  background-color: var(--positive-button-active-background-color, @positiveColorActive);
+  color: var(--positive-button-text-color, @positiveTextColor);
+  text-shadow: var(--positive-button-text-shadow, @positiveTextShadow);
 }
 
 /* Basic */
 .ui.basic.positive.buttons .button,
 .ui.basic.positive.button {
-  box-shadow: 0px 0px 0px @basicBorderSize @positiveColor inset !important;
-  color: @positiveColor !important;
+  box-shadow: var(--basic-positive-button-box-shadow, 0px 0px 0px @basicBorderSize @positiveColor inset) !important;
+  color: var(--positive-color, @positiveColor) !important;
 }
 .ui.basic.positive.buttons .button:hover,
 .ui.basic.positive.button:hover {
   background: transparent !important;
-  box-shadow: 0px 0px 0px @basicColoredBorderSize @positiveColorHover inset !important;
-  color: @positiveColorHover !important;
+  box-shadow: var(--basic-positive-button-hover-box-shadow, 0px 0px 0px @basicColoredBorderSize @positiveColorHover inset) !important;
+  color: var(--positive-color-hover, @positiveColorHover) !important;
 }
 .ui.basic.positive.buttons .button:focus,
 .ui.basic.positive.button:focus {
   background: transparent !important;
-  box-shadow: 0px 0px 0px @basicColoredBorderSize @positiveColorFocus inset !important;
-  color: @positiveColorHover !important;
+  box-shadow: var(--basic-positive-button-focus-box-shadow, 0px 0px 0px @basicColoredBorderSize @positiveColorFocus inset) !important;
+  color: var(--positive-color-hover, @positiveColorHover) !important;
 }
 .ui.basic.positive.buttons .active.button,
 .ui.basic.positive.active.button {
   background: transparent !important;
-  box-shadow: 0px 0px 0px @basicColoredBorderSize @positiveColorActive inset !important;
-  color: @positiveColorDown !important;
+  box-shadow: var(--basic-positive-button-active-box-shadow, 0px 0px 0px @basicColoredBorderSize @positiveColorActive inset) !important;
+  color: var(--positive-color-down, @positiveColorDown) !important;
 }
 .ui.basic.positive.buttons .button:active,
 .ui.basic.positive.button:active {
-  box-shadow: 0px 0px 0px @basicColoredBorderSize @positiveColorDown inset !important;
-  color: @positiveColorDown !important;
+  box-shadow: var(--basic-positive-button-down-box-shadow, 0px 0px 0px @basicColoredBorderSize @positiveColorDown inset) !important;
+  color: var(--positive-color-down, @positiveColorDown) !important;
 }
-.ui.buttons:not(.vertical) > .basic.primary.button:not(:first-child) {
-  margin-left: -@basicColoredBorderSize;
+.ui.buttons:not(.vertical) > .basic.positive.button:not(:first-child) {
+  margin-left: calc(-1 * var(--basic-colored-border-size, @basicColoredBorderSize));
 }
 
 /*---------------
@@ -848,145 +712,73 @@
 /* Standard */
 .ui.negative.buttons .button,
 .ui.negative.button {
-  background-color: @negativeColor;
-  color: @negativeTextColor;
-  text-shadow: @negativeTextShadow;
-  background-image: @coloredBackgroundImage;
+  background-color: var(--negative-button-background-color, @negativeColor);
+  color: var(--negative-button-text-color, @negativeTextColor);
+  text-shadow: var(--negative-button-text-shadow, @negativeTextShadow);
+  background-image: var(--negative-button-background-image, @coloredBackgroundImage);
 }
 .ui.negative.button {
-  box-shadow: @coloredBoxShadow;
+  box-shadow: var(--negative-button-box-shadow, @coloredBoxShadow);
 }
 .ui.negative.buttons .button:hover,
 .ui.negative.button:hover {
-  background-color: @negativeColorHover;
-  color: @negativeTextColor;
-  text-shadow: @negativeTextShadow;
+  background-color: var(--negative-button-hover-background-color, @negativeColorHover);
+  color: var(--negative-button-text-color, @negativeTextColor);
+  text-shadow: var(--negative-button-text-shadow, @negativeTextShadow);
 }
 .ui.negative.buttons .button:focus,
 .ui.negative.button:focus {
-  background-color: @negativeColorFocus;
-  color: @negativeTextColor;
-  text-shadow: @negativeTextShadow;
+  background-color: var(--negative-button-focus-background-color, @negativeColorFocus);
+  color: var(--negative-button-text-color, @negativeTextColor);
+  text-shadow: var(--negative-button-text-shadow, @negativeTextShadow);
 }
 .ui.negative.buttons .button:active,
 .ui.negative.button:active {
-  background-color: @negativeColorDown;
-  color: @negativeTextColor;
-  text-shadow: @negativeTextShadow;
+  background-color: var(--negative-button-down-background-color, @negativeColorDown);
+  color: var(--negative-button-text-color, @negativeTextColor);
+  text-shadow: var(--negative-button-text-shadow, @negativeTextShadow);
 }
 .ui.negative.buttons .active.button,
 .ui.negative.buttons .active.button:active,
 .ui.negative.active.button,
 .ui.negative.button .active.button:active {
-  background-color: @negativeColorActive;
-  color: @negativeTextColor;
-  text-shadow: @negativeTextShadow;
+  background-color: var(--negative-button-active-background-color, @negativeColorActive);
+  color: var(--negative-button-text-color, @negativeTextColor);
+  text-shadow: var(--negative-button-text-shadow, @negativeTextShadow);
 }
 
 /* Basic */
 .ui.basic.negative.buttons .button,
 .ui.basic.negative.button {
-  box-shadow: 0px 0px 0px @basicBorderSize @negativeColor inset !important;
-  color: @negativeColor !important;
+  box-shadow: var(--basic-negative-button-box-shadow, 0px 0px 0px @basicBorderSize @negativeColor inset) !important;
+  color: var(--negative-color, @negativeColor) !important;
 }
 .ui.basic.negative.buttons .button:hover,
 .ui.basic.negative.button:hover {
   background: transparent !important;
-  box-shadow: 0px 0px 0px @basicColoredBorderSize @negativeColorHover inset !important;
-  color: @negativeColorHover !important;
+  box-shadow: var(--basic-negative-button-hover-box-shadow, 0px 0px 0px @basicColoredBorderSize @negativeColorHover inset) !important;
+  color: var(--negative-color-hover, @negativeColorHover) !important;
 }
 .ui.basic.negative.buttons .button:focus,
 .ui.basic.negative.button:focus {
   background: transparent !important;
-  box-shadow: 0px 0px 0px @basicColoredBorderSize @negativeColorFocus inset !important;
-  color: @negativeColorHover !important;
+  box-shadow: var(--basic-negative-button-focus-box-shadow, 0px 0px 0px @basicColoredBorderSize @negativeColorFocus inset) !important;
+  color: var(--negative-color-hover, @negativeColorHover) !important;
 }
 .ui.basic.negative.buttons .active.button,
 .ui.basic.negative.active.button {
   background: transparent !important;
-  box-shadow: 0px 0px 0px @basicColoredBorderSize @negativeColorActive inset !important;
-  color: @negativeColorDown !important;
+  box-shadow: var(--basic-negative-button-active-box-shadow, 0px 0px 0px @basicColoredBorderSize @negativeColorActive inset) !important;
+  color: var(--negative-color-down, @negativeColorDown) !important;
 }
 .ui.basic.negative.buttons .button:active,
 .ui.basic.negative.button:active {
-  box-shadow: 0px 0px 0px @basicColoredBorderSize @negativeColorDown inset !important;
-  color: @negativeColorDown !important;
+  box-shadow: var(--basic-negative-button-down-box-shadow, 0px 0px 0px @basicColoredBorderSize @negativeColorDown inset) !important;
+  color: var(--negative-color-down, @negativeColorDown) !important;
 }
-.ui.buttons:not(.vertical) > .basic.primary.button:not(:first-child) {
-  margin-left: -@basicColoredBorderSize;
-}
-
-/*******************************
-            Groups
-*******************************/
-
-.ui.buttons {
-  display: inline-flex;
-  flex-direction: row;
-  font-size: 0em;
-  vertical-align: baseline;
-  margin: @verticalMargin @horizontalMargin 0em 0em;
-}
-.ui.buttons:not(.basic):not(.inverted) {
-  box-shadow: @groupBoxShadow;
+.ui.buttons:not(.vertical) > .basic.negative.button:not(:first-child) {
+  margin-left: calc(-1 * var(--basic-colored-border-size, @basicColoredBorderSize));
 }
 
-/* Clearfix */
-.ui.buttons:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-
-/* Standard Group */
-.ui.buttons .button {
-  flex: 1 0 auto;
-  margin: 0em;
-  border-radius: 0em;
-  margin: @groupButtonOffset;
-}
-.ui.buttons > .ui.button:not(.basic):not(.inverted),
-.ui.buttons:not(.basic):not(.inverted) > .button {
-  box-shadow: @groupButtonBoxShadow;
-}
-
-.ui.buttons .button:first-child {
-  border-left: none;
-  margin-left: 0em;
-  border-top-left-radius: @borderRadius;
-  border-bottom-left-radius: @borderRadius;
-}
-.ui.buttons .button:last-child {
-  border-top-right-radius: @borderRadius;
-  border-bottom-right-radius: @borderRadius;
-}
-
-/* Vertical  Style */
-.ui.vertical.buttons {
-  display: inline-flex;
-  flex-direction: column;
-}
-.ui.vertical.buttons .button {
-  display: block;
-  float: none;
-  width: 100%;
-  margin: @verticalGroupOffset;
-  box-shadow: @verticalBoxShadow;
-  border-radius: 0em;
-}
-.ui.vertical.buttons .button:first-child {
-  border-top-left-radius: @borderRadius;
-  border-top-right-radius: @borderRadius;
-}
-.ui.vertical.buttons .button:last-child {
-  margin-bottom: 0px;
-  border-bottom-left-radius: @borderRadius;
-  border-bottom-right-radius: @borderRadius;
-}
-.ui.vertical.buttons .button:only-child {
-  border-radius: @borderRadius;
-}
 
 .loadUIOverrides();

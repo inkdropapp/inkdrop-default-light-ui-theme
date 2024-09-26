@@ -1030,6 +1030,90 @@
   --basic-button-active-box-shadow: none;
   --basic-button-active-text-color: var(--selected-text-color);
 
+  /*--- Primary ----*/
+
+  /* Standard */
+  --primary-button-background-color: var(--primary-color);
+  --primary-button-text-color: var(--inverted-text-color);
+  --primary-button-text-shadow: var(--inverted-text-shadow, none);
+  --primary-button-background-image: none;
+  --primary-button-box-shadow: var(--colored-box-shadow, var(--subtle-shadow));
+
+  --primary-button-hover-background-color: var(--primary-color-hover);
+  --primary-button-focus-background-color: var(--primary-color-focus);
+  --primary-button-down-background-color: var(--primary-color-down);
+  --primary-button-active-background-color: var(--primary-color-active);
+
+  /* Basic */
+  --basic-primary-button-box-shadow: 0px 0px 0px 1px var(--primary-color) inset;
+  --basic-primary-button-hover-box-shadow: 0px 0px 0px 1px var(--primary-color-hover) inset;
+  --basic-primary-button-focus-box-shadow: 0px 0px 0px 1px var(--primary-color-focus) inset;
+  --basic-primary-button-active-box-shadow: 0px 0px 0px 1px var(--primary-color-active) inset;
+  --basic-primary-button-down-box-shadow: 0px 0px 0px 1px var(--primary-color-down) inset;
+
+  /*--- Secondary ----*/
+
+  /* Standard */
+  --secondary-button-background-color: var(--secondary-color);
+  --secondary-button-text-color: var(--inverted-text-color);
+  --secondary-button-text-shadow: none;
+  --secondary-button-background-image: none;
+  --secondary-button-box-shadow: var(--subtle-shadow);
+
+  --secondary-button-hover-background-color: var(--secondary-color-hover);
+  --secondary-button-focus-background-color: var(--secondary-color-focus);
+  --secondary-button-down-background-color: var(--secondary-color-down);
+  --secondary-button-active-background-color: var(--secondary-color-active);
+
+  /* Basic */
+  --basic-secondary-button-box-shadow: 0px 0px 0px 1px var(--secondary-color) inset;
+  --basic-secondary-button-hover-box-shadow: 0px 0px 0px 1px var(--secondary-color-hover) inset;
+  --basic-secondary-button-focus-box-shadow: 0px 0px 0px 1px var(--secondary-color-focus) inset;
+  --basic-secondary-button-down-box-shadow: 0px 0px 0px 1px var(--secondary-color-down) inset;
+  --basic-secondary-button-active-box-shadow: 0px 0px 0px 1px var(--secondary-color-active) inset;
+
+  /*--- Positive ---*/
+
+  /* Standard */
+  --positive-button-background-color: var(--positive-color);
+  --positive-button-text-color: var(--inverted-text-color);
+  --positive-button-text-shadow: none;
+  --positive-button-background-image: none;
+  --positive-button-box-shadow: var(--subtle-shadow);
+
+  --positive-button-hover-background-color: var(--positive-color-hover);
+  --positive-button-focus-background-color: var(--positive-color-focus);
+  --positive-button-down-background-color: var(--positive-color-down);
+  --positive-button-active-background-color: var(--positive-color-active);
+
+  /* Basic */
+  --basic-positive-button-box-shadow: 0px 0px 0px 1px var(--positive-color) inset;
+  --basic-positive-button-hover-box-shadow: 0px 0px 0px 1px var(--positive-color-hover) inset;
+  --basic-positive-button-focus-box-shadow: 0px 0px 0px 1px var(--positive-color-focus) inset;
+  --basic-positive-button-down-box-shadow: 0px 0px 0px 1px var(--positive-color-down) inset;
+  --basic-positive-button-active-box-shadow: 0px 0px 0px 1px var(--positive-color-active) inset;
+
+  /*--- Negative ---*/
+
+  /* Standard */
+  --negative-button-background-color: var(--negative-color);
+  --negative-button-text-color: var(--inverted-text-color);
+  --negative-button-text-shadow: none;
+  --negative-button-background-image: none;
+  --negative-button-box-shadow: var(--subtle-shadow);
+
+  --negative-button-hover-background-color: var(--negative-color-hover);
+  --negative-button-focus-background-color: var(--negative-color-focus);
+  --negative-button-down-background-color: var(--negative-color-down);
+  --negative-button-active-background-color: var(--negative-color-active);
+
+  /* Basic */
+  --basic-negative-button-box-shadow: 0px 0px 0px 1px var(--negative-color) inset;
+  --basic-negative-button-hover-box-shadow: 0px 0px 0px 1px var(--negative-color-hover) inset;
+  --basic-negative-button-focus-box-shadow: 0px 0px 0px 1px var(--negative-color-focus) inset;
+  --basic-negative-button-down-box-shadow: 0px 0px 0px 1px var(--negative-color-down) inset;
+  --basic-negative-button-active-box-shadow: 0px 0px 0px 1px var(--negative-color-active) inset;
+
   /*-------------------
         Side Bar
   --------------------*/
