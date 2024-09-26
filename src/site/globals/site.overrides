@@ -1002,6 +1002,33 @@
   --button-loading-pointer-events: auto;
   --button-loading-transition: all 0s linear, opacity var(--default-duration) var(--default-easing);
 
+  /* Icon Only */
+  --button-icon-only-opacity: 0.9;
+
+  /* Basic style */
+  --basic-button-background: transparent none;
+  --basic-button-text-color: var(--text-color);
+  --basic-button-font-weight: normal;
+  --basic-button-border-radius: var(--default-border-radius);
+  --basic-button-box-shadow: 0px 0px 0px 1px var(--border-color) inset;
+
+  --basic-button-hover-background: #FFFFFF;
+  --basic-button-hover-text-color: var(--hovered-text-color);
+  --basic-button-hover-box-shadow: 0px 0px 0px 1px var(--selected-border-color) inset, 0px 0px 0px 0px var(--border-color) inset;
+
+  --basic-button-focus-background: var(--basic-button-hover-background);
+  --basic-button-focus-text-color: var(--basic-button-hover-text-color);
+  --basic-button-focus-box-shadow: var(--basic-button-hover-box-shadow);
+
+  --basic-button-down-background: #F8F8F8;
+  --basic-button-down-text-color: var(--pressed-text-color);
+  --basic-button-down-box-shadow:
+    0px 0px 0px 1px rgba(0, 0, 0, 0.15) inset,
+    0px 1px 4px 0px var(--border-color) inset;
+
+  --basic-button-active-background: var(--transparent-black);
+  --basic-button-active-box-shadow: none;
+  --basic-button-active-text-color: var(--selected-text-color);
 
   /*-------------------
         Side Bar
