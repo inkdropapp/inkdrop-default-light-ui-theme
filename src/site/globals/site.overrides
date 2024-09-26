@@ -1115,6 +1115,17 @@
   --basic-negative-button-active-box-shadow: 0px 0px 0px 1px var(--negative-color-active) inset;
 
   /*-------------------
+        Divider
+  --------------------*/
+
+  --divider-text-color: var(--dark-text-color);
+  --divider-border-shadow-width: 1px;
+  --divider-border-shadow-color: var(--border-color);
+  --divider-border-highlight-width: 1px;
+  --divider-border-highlight-color: var(--white-border-color);
+
+
+  /*-------------------
         Side Bar
   --------------------*/
   --sidebar-background: @sidebarBackground;

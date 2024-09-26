@@ -31,7 +31,7 @@
   font-weight: @fontWeight;
   text-transform: @textTransform;
   letter-spacing: @letterSpacing;
-  color: @color;
+  color: var(--divider-text-color, @color);
 
   user-select: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -42,8 +42,8 @@
 ---------------*/
 
 .ui.divider:not(.vertical):not(.horizontal) {
-  border-top: @shadowWidth solid @shadowColor;
-  border-bottom: @highlightWidth solid @highlightColor;
+  border-top: var(--divider-border-shadow-width) solid var(--divider-border-shadow-color);
+  border-bottom: var(--divider-border-highlight-width) solid var(--divider-border-highlight-color);
 }
 
 /*--------------
@@ -114,8 +114,8 @@
   content: '';
   z-index: 3;
 
-  border-left: @shadowWidth solid @shadowColor;
-  border-right: @highlightWidth solid @highlightColor;
+  border-left: var(--divider-border-shadow-width) solid var(--divider-border-shadow-color);
+  border-right: var(--divider-border-highlight-width) solid var(--divider-border-highlight-color);
 
   width: 0%;
   height: @verticalDividerHeight;
@@ -198,24 +198,6 @@
 .ui.hidden.divider:before,
 .ui.hidden.divider:after {
   display: none;
-}
-
-/*--------------
-    Inverted
----------------*/
-
-.ui.divider.inverted,
-.ui.vertical.inverted.divider,
-.ui.horizontal.inverted.divider {
-  color: @invertedTextColor;
-}
-.ui.divider.inverted,
-.ui.divider.inverted:after,
-.ui.divider.inverted:before {
-  border-top-color: @invertedShadowColor !important;
-  border-left-color: @invertedShadowColor !important;
-  border-bottom-color: @invertedHighlightColor !important;
-  border-right-color: @invertedHighlightColor !important;
 }
 
 /*--------------
