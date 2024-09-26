@@ -1155,6 +1155,33 @@
   --tiny-sub-header-font-size: var(--h5-sub-header-font-size);
 
   /*-------------------
+        Input
+  --------------------*/
+
+  --input-font-family: var(--page-font);
+  --input-border-width: 1px;
+  --input-border: var(--input-border-width) solid var(--border-color);
+  --input-border-radius: var(--default-border-radius);
+  --input-box-shadow: none;
+
+  --input-down-border-color: rgba(0, 0, 0, 0.3);
+  --input-down-background: #FAFAFA;
+  --input-down-color: var(--text-color);
+  --input-down-box-shadow: none;
+
+  --input-focus-border-color: var(--focused-form-border-color);
+  --input-focus-background: var(--input-background);
+  --input-focus-color: var(--hovered-text-color);
+  --input-focus-box-shadow: none;
+
+  --input-error-background-color: var(--negative-background-color);
+  --input-error-border-color: var(--negative-border-color);
+  --input-error-color: var(--negative-text-color);
+  --input-error-box-shadow: none;
+  --input-placeholder-error-color: #D98886;
+  --input-placeholder-error-focus-color: #C26765;
+
+  /*-------------------
         Side Bar
   --------------------*/
   --sidebar-background: @sidebarBackground;
