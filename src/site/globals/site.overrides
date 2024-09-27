@@ -1240,7 +1240,7 @@
   --form-input-font-size: 1em;
   --form-label-color: var(--text-color);
   --form-label-font-size: var(--relative-small);
-  --form-label-font-weight: var(--bold);
+  --form-label-font-weight: var(--font-weights-bold);
   --input-border-radius: var(--absolute-border-radius);
   --input-box-shadow: 0em 0em 0em 0em transparent inset;
   --form-textarea-line-height: 1.2857;
@@ -1278,7 +1278,7 @@
   --form-loader-dimmer-z-index: 100;
   --form-inline-label-color: var(--text-color);
   --form-inline-label-font-size: var(--relative-small);
-  --form-inline-label-font-weight: var(--bold);
+  --form-inline-label-font-weight: var(--font-weights-bold);
   --form-inline-input-size: var(--relative-medium);
 
   /*-------------------
@@ -1329,6 +1329,43 @@
   --secondary-menu-active-hover-item-background: var(--transparent-black);
   --secondary-menu-active-hover-item-color: var(--selected-text-color);
   --secondary-vertical-menu-item-border-radius: var(--default-border-radius);
+
+  /*-------------------
+        Message
+  --------------------*/
+  --message-background: #F8F8F9;
+  --message-shadow-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  --message-box-shadow:
+    0px 0px 0px 1px var(--strong-border-color) inset,
+    var(--message-shadow-shadow);
+  --message-header-font-weight: var(--font-weights-bold);
+  --message-header-font-size: var(--relative-large);
+  --message-text-opacity: 0.85;
+  --message-list-opacity: 0.85;
+  --positive-box-shadow:
+    0px 0px 0px 1px var(--positive-border-color) inset,
+    var(--message-shadow-shadow)
+  ;
+  --negative-box-shadow:
+    0px 0px 0px 1px var(--negative-border-color) inset,
+    var(--message-shadow-shadow)
+  ;
+  --info-box-shadow:
+    0px 0px 0px 1px var(--info-border-color) inset,
+    var(--message-shadow-shadow)
+  ;
+  --warning-box-shadow:
+    0px 0px 0px 1px var(--warning-border-color) inset,
+    var(--message-shadow-shadow)
+  ;
+  --error-box-shadow:
+    0px 0px 0px 1px var(--error-border-color) inset,
+    var(--message-shadow-shadow)
+  ;
+  --success-box-shadow:
+    0px 0px 0px 1px var(--success-border-color) inset,
+    var(--message-shadow-shadow)
+  ;
 
 
   /*-------------------
