@@ -1367,6 +1367,19 @@
     var(--message-shadow-shadow)
   ;
 
+  /*-------------------
+        Table
+  --------------------*/
+  --table-background: var(--white);
+  --table-border-width: 1px;
+  --table-border: var(--table-border-width) solid var(--border-color);
+  --table-box-shadow: noone;
+  --table-header-background: var(--off-white);
+  --table-header-color: var(--text-color);
+  --table-header-font-style: none;
+  --table-header-font-weight: var(--font-weights-bold);
+  --table-header-border: 1px solid var(--internal-border-color);
+  --table-header-divider: none;
 
   /*-------------------
         Side Bar
