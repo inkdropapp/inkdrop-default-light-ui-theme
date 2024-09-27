@@ -85,6 +85,8 @@
   --input-color: @inputColor;
   --input-placeholder-color: @inputPlaceholderColor;
   --input-placeholder-focus-color: @inputPlaceholderFocusColor;
+  --input-error-placeholder-color: @inputErrorPlaceholderColor;
+  --input-error-placeholder-focus-color: @inputErrorPlaceholderFocusColor;
 
   /* Line Height Default For Inputs in Browser */
   --input-line-height: @inputLineHeight;
@@ -1231,7 +1233,53 @@
   --grouped-segment-border: none;
   --grouped-segment-divider: 1px solid var(--border-color);
 
+  /*-------------------
+        Form
+  --------------------*/
+  --form-input-font: var(--page-font);
+  --form-input-font-size: 1em;
+  --form-label-color: var(--text-color);
+  --form-label-font-size: var(--relative-small);
+  --form-label-font-weight: var(--bold);
+  --input-border-radius: var(--absolute-border-radius);
+  --input-box-shadow: 0em 0em 0em 0em transparent inset;
+  --form-textarea-line-height: 1.2857;
+  --form-select-background: var(--white);
+  --form-select-border: var(--input-border);
+  --form-select-border-radius: var(--input-border-radius);
+  --form-select-box-shadow: var(--input-box-shadow);
+  --form-select-color: var(--input-color);
+  --form-prompt-background: var(--white);
+  --form-prompt-border-color: var(--negative-border-color);
+  --form-prompt-border: 1px solid var(--form-prompt-border-color);
+  --form-prompt-text-color: var(--negative-text-color);
+  --form-input-focus-color: var(--selected-text-color);
+  --form-input-focus-border-color: var(--focused-form-border-color);
+  --form-input-focus-border-radius: var(--input-border-radius);
+  --form-input-focus-background: var(--input-background);
+  --form-input-focus-box-shadow: 0px 0em 0em 0em var(--selected-border-color) inset;
+  --form-textarea-focus-color: var(--selected-text-color);
+  --form-textarea-focus-border-color: var(--focused-form-border-color);
+  --form-textarea-focus-border-radius: var(--input-border-radius);
+  --form-textarea-focus-background: var(--input-background);
+  --form-textarea-focus-box-shadow: 0px 0em 0em 0em var(--selected-border-color) inset;
 
+  --form-error-color: var(--negative-text-color);
+  --form-error-border-color: var(--negative-border-color);
+  --form-error-border-radius: var(--input-border-radius);
+  --form-error-background: var(--negative-background-color);
+  --form-error-box-shadow: none;
+  --form-error-focus-color: var(--negative-text-color);
+  --form-error-focus-border-color: var(--negative-border-color);
+  --form-error-focus-background: var(--negative-background-color);
+  --form-error-focus-box-shadow: none;
+
+  --form-loader-dimmer-color: rgba(255, 255, 255, 0.8);
+  --form-loader-dimmer-z-index: 100;
+  --form-inline-label-color: var(--text-color);
+  --form-inline-label-font-size: var(--relative-small);
+  --form-inline-label-font-weight: var(--bold);
+  --form-inline-input-size: var(--relative-medium);
 
   /*-------------------
         Side Bar

@@ -65,9 +65,9 @@
 .ui.form .field > label {
   display: block;
   margin: @labelMargin;
-  color: @labelColor;
-  font-size: @labelFontSize;
-  font-weight: @labelFontWeight;
+  color: var(--form-label-color, @labelColor);
+  font-size: var(--form-label-font-size, @labelFontSize);
+  font-weight: var(--form-label-font-weight, @labelFontWeight);
   text-transform: @labelTextTransform;
 }
 
@@ -111,7 +111,7 @@
 .ui.form input[type="text"],
 .ui.form input[type="file"],
 .ui.form input[type="url"] {
-  font-family: @inputFont;
+  font-family: var(--form-input-font, @inputFont);
   margin: 0em;
   outline-offset: var(--unfocused-outline-offset);
   outline-width: var(--focused-outline-width);
@@ -120,15 +120,15 @@
   -webkit-appearance: none;
   tap-highlight-color:  rgba(255, 255, 255, 0);
 
-  line-height: @inputLineHeight;
+  line-height: var(--input-line-height, @inputLineHeight);
   padding: @inputPadding;
-  font-size: @inputFontSize;
+  font-size: var(--form-input-font-size, @inputFontSize);
 
-  background: @inputBackground;
-  border: @inputBorder;
-  color: @inputColor;
-  border-radius: @inputBorderRadius;
-  box-shadow: @inputBoxShadow;
+  background: var(--input-background, @inputBackground);
+  border: var(--input-border, @inputBorder);
+  color: var(--input-color, @inputColor);
+  border-radius: var(--input-border-radius, @inputBorderRadius);
+  box-shadow: var(--input-box-shadow, @inputBoxShadow);
   transition: @inputTransition;
 
   &:focus {
@@ -144,19 +144,19 @@
   tap-highlight-color:  rgba(255, 255, 255, 0);
 
   padding: @textAreaPadding;
-  font-size: @textAreaFontSize;
-  background: @textAreaBackground;
-  border: @textAreaBorder;
+  font-size: var(--form-input-font-size, @textAreaFontSize);
+  background: var(--input-background, @textAreaBackground);
+  border: var(--input-border, @textAreaBorder);
   outline-offset: var(--unfocused-outline-offset);
   outline-width: var(--focused-outline-width);
   outline-color: var(--unfocused-outline-color);
   outline-style: var(--focused-outline-style);
-  color: @inputColor;
-  border-radius: @inputBorderRadius;
-  box-shadow: @inputBoxShadow;
+  color: var(--input-color, @inputColor);
+  border-radius: var(--input-border-radius, @inputBorderRadius);
+  box-shadow: var(--input-box-shadow, @inputBoxShadow);
   transition: @textAreaTransition;
-  font-size: @textAreaFontSize;
-  line-height: @textAreaLineHeight;
+  font-size: var(--form-input-font-size, @textAreaFontSize);
+  line-height: var(--form-textarea-line-height, @textAreaLineHeight);
   resize: @textAreaResize;
 
   &:focus {
@@ -192,12 +192,12 @@
   display: block;
   height: auto;
   width: 100%;
-  background: @selectBackground;
-  border: @selectBorder;
-  border-radius: @selectBorderRadius;
-  box-shadow: @selectBoxShadow;
+  background: var(--form-select-background, @selectBackground);
+  border: var(--form-select-border, @selectBorder);
+  border-radius: var(--form-select-border-radius, @selectBorderRadius);
+  box-shadow: var(--form-select-box-shadow, @selectBoxShadow);
   padding: @selectPadding;
-  color: @selectColor;
+  color: var(--form-select-color, @selectColor);
   transition: @selectTransition;
 }
 
@@ -284,9 +284,9 @@
 
 .ui.form .field .prompt.label {
   white-space: normal;
-  background: @promptBackground !important;
-  border: @promptBorder !important;
-  color: @promptTextColor !important;
+  background: var(--form-prompt-background, @promptBackground) !important;
+  border: var(--form-prompt-border, @promptBorder) !important;
+  color: var(--form-prompt-text-color, @promptTextColor) !important;
 }
 .ui.form .inline.fields .field .prompt,
 .ui.form .inline.field .prompt {
@@ -336,44 +336,44 @@
 
 /* browsers require these rules separate */
 .ui.form ::-webkit-input-placeholder {
-  color: @inputPlaceholderColor;
+  color: var(--input-placeholder-color, @inputPlaceholderColor);
 }
 .ui.form :-ms-input-placeholder {
-  color: @inputPlaceholderColor !important;
+  color: var(--input-placeholder-color, @inputPlaceholderColor) !important;
 }
 .ui.form ::-moz-placeholder {
-  color: @inputPlaceholderColor;
+  color: var(--input-placeholder-color, @inputPlaceholderColor);
 }
 
 .ui.form :focus::-webkit-input-placeholder {
-  color: @inputPlaceholderFocusColor;
+  color: var(--input-placeholder-focus-color, @inputPlaceholderFocusColor);
 }
 .ui.form :focus:-ms-input-placeholder {
-  color: @inputPlaceholderFocusColor !important;
+  color: var(--input-placeholder-focus-color, @inputPlaceholderFocusColor) !important;
 }
 .ui.form :focus::-moz-placeholder {
-  color: @inputPlaceholderFocusColor;
+  color: var(--input-placeholder-focus-color, @inputPlaceholderFocusColor);
 }
 
 /* Error Placeholder */
 .ui.form .error ::-webkit-input-placeholder {
-  color: @inputErrorPlaceholderColor;
+  color: var(--input-error-placeholder-color, @inputErrorPlaceholderColor);
 }
 .ui.form .error :-ms-input-placeholder {
-  color: @inputErrorPlaceholderColor !important;
+  color: var(--input-error-placeholder-color, @inputErrorPlaceholderColor) !important;
 }
 .ui.form .error ::-moz-placeholder {
-  color: @inputErrorPlaceholderColor;
+  color: var(--input-error-placeholder-color, @inputErrorPlaceholderColor);
 }
 
 .ui.form .error :focus::-webkit-input-placeholder {
-  color: @inputErrorPlaceholderFocusColor;
+  color: var(--input-error-placeholder-focus-color, @inputErrorPlaceholderFocusColor);
 }
 .ui.form .error :focus:-ms-input-placeholder {
-  color: @inputErrorPlaceholderFocusColor !important;
+  color: var(--input-error-placeholder-focus-color, @inputErrorPlaceholderFocusColor) !important;
 }
 .ui.form .error :focus::-moz-placeholder {
-  color: @inputErrorPlaceholderFocusColor;
+  color: var(--input-error-placeholder-focus-color, @inputErrorPlaceholderFocusColor);
 }
 
 
@@ -393,18 +393,18 @@
 .ui.form input[type="text"]:focus,
 .ui.form input[type="file"]:focus,
 .ui.form input[type="url"]:focus {
-  color: @inputFocusColor;
-  border-color: @inputFocusBorderColor;
-  border-radius: @inputFocusBorderRadius;
-  background: @inputFocusBackground;
-  box-shadow: @inputFocusBoxShadow;
+  color: var(--form-input-focus-color, @inputFocusColor);
+  border-color: var(--form-input-focus-border-color, @inputFocusBorderColor);
+  border-radius: var(--form-input-focus-border-radius, @inputFocusBorderRadius);
+  background: var(--form-input-focus-background, @inputFocusBackground);
+  box-shadow: var(--form-input-focus-box-shadow, @inputFocusBoxShadow);
 }
 .ui.form textarea:focus {
-  color: @textAreaFocusColor;
-  border-color: @textAreaFocusBorderColor;
-  border-radius: @textAreaFocusBorderRadius;
-  background: @textAreaFocusBackground;
-  box-shadow: @textAreaFocusBoxShadow;
+  color: var(--form-textarea-focus-color, @textAreaFocusColor);
+  border-color: var(--form-textarea-focus-border-color, @textAreaFocusBorderColor);
+  border-radius: var(--form-textarea-focus-border-radius, @textAreaFocusBorderRadius);
+  background: var(--form-textarea-focus-background, @textAreaFocusBackground);
+  box-shadow: var(--form-textarea-focus-box-shadow, @textAreaFocusBoxShadow);
   -webkit-appearance: none;
 }
 
@@ -459,13 +459,13 @@
 .ui.form .field.error label,
 .ui.form .fields.error .field .input,
 .ui.form .field.error .input {
-  color: @formErrorColor;
+  color: var(--form-error-color, @formErrorColor);
 }
 
 .ui.form .fields.error .field .corner.label,
 .ui.form .field.error .corner.label {
-  border-color: @formErrorColor;
-  color: @white;
+  border-color: var(--form-error-color, @formErrorColor);
+  color: var(--white);
 }
 
 .ui.form .fields.error .field textarea,
@@ -496,11 +496,11 @@
 .ui.form .field.error input[type="text"],
 .ui.form .field.error input[type="file"],
 .ui.form .field.error input[type="url"] {
-  background: @formErrorBackground;
-  border-color: @formErrorBorder;
-  color: @formErrorColor;
-  border-radius: @inputErrorBorderRadius;
-  box-shadow: @inputErrorBoxShadow;
+  background: var(--form-error-background, @formErrorBackground);
+  border-color: var(--form-error-border-color, @formErrorBorder);
+  color: var(--form-error-color, @formErrorColor);
+  border-radius: var(--form-error-border-radius, @inputErrorBorderRadius);
+  box-shadow: var(--form-error-box-shadow, @inputErrorBoxShadow);
 }
 .ui.form .field.error textarea:focus,
 .ui.form .field.error select:focus,
@@ -516,12 +516,12 @@
 .ui.form .field.error input[type="text"]:focus,
 .ui.form .field.error input[type="file"]:focus,
 .ui.form .field.error input[type="url"]:focus {
-  background: @inputErrorFocusBackground;
-  border-color: @inputErrorFocusBorder;
-  color: @inputErrorFocusColor;
+  background: var(--form-error-focus-background, @inputErrorFocusBackground);
+  border-color: var(--form-error-focus-border-color, @inputErrorFocusBorder);
+  color: var(--form-error-focus-color, @inputErrorFocusColor);
 
   -webkit-appearance: none;
-  box-shadow: @inputErrorFocusBoxShadow;
+  box-shadow: var(--form-error-focus-box-shadow, @inputErrorFocusBoxShadow);
 }
 
 /* Preserve Native Select Stylings */
@@ -538,20 +538,20 @@
 .ui.form .field.error .ui.dropdown,
 .ui.form .field.error .ui.dropdown .text,
 .ui.form .field.error .ui.dropdown .item {
-  background: @formErrorBackground;
-  color: @formErrorColor;
+  background: var(--form-error-background, @formErrorBackground);
+  color: var(--form-error-color, @formErrorColor);
 }
 .ui.form .fields.error .field .ui.dropdown,
 .ui.form .field.error .ui.dropdown {
-  border-color: @formErrorBorder !important;
+  border-color: var(--form-error-border-color, @formErrorBorder) !important;
 }
 .ui.form .fields.error .field .ui.dropdown:hover,
 .ui.form .field.error .ui.dropdown:hover {
-  border-color: @formErrorBorder !important;
+  border-color: var(--form-error-border-color, @formErrorBorder) !important;
 }
 .ui.form .fields.error .field .ui.dropdown:hover .menu,
 .ui.form .field.error .ui.dropdown:hover .menu {
-  border-color: @formErrorBorder;
+  border-color: var(--form-error-border-color, @formErrorBorder);
 }
 .ui.form .fields.error .field .ui.multiple.selection.dropdown > .label,
 .ui.form .field.error .ui.multiple.selection.dropdown > .label {
@@ -586,20 +586,20 @@
 .ui.form .field.error .checkbox:not(.toggle):not(.slider) label,
 .ui.form .fields.error .field .checkbox:not(.toggle):not(.slider) .box,
 .ui.form .field.error .checkbox:not(.toggle):not(.slider) .box {
-  color: @formErrorColor;
+  color: var(--form-error-color, @formErrorColor);
 }
 .ui.form .fields.error .field .checkbox:not(.toggle):not(.slider) label:before,
 .ui.form .field.error .checkbox:not(.toggle):not(.slider) label:before,
 .ui.form .fields.error .field .checkbox:not(.toggle):not(.slider) .box:before,
 .ui.form .field.error .checkbox:not(.toggle):not(.slider) .box:before {
-  background: @formErrorBackground;
-  border-color: @formErrorBorder;
+  background: var(--form-error-background, @formErrorBackground);
+  border-color: var(--form-error-border-color, @formErrorBorder);
 }
 .ui.form .fields.error .field .checkbox label:after,
 .ui.form .field.error .checkbox label:after,
 .ui.form .fields.error .field .checkbox .box:after,
 .ui.form .field.error .checkbox .box:after {
-  color: @formErrorColor;
+  color: var(--form-error-color, @formErrorColor);
 }
 
 /*--------------------
@@ -610,11 +610,11 @@
 .ui.form .disabled.field,
 .ui.form .field :disabled {
   pointer-events: none;
-  opacity: @disabledOpacity;
+  opacity: var(--disabled-opacity, @disabledOpacity);
 }
 .ui.form .field.disabled > label,
 .ui.form .fields.disabled > label {
-  opacity: @disabledLabelOpacity;
+  opacity: var(--disabled-opacity, @disabledLabelOpacity);
 }
 .ui.form .field.disabled :disabled {
   opacity: 1;
@@ -635,10 +635,10 @@
   content: '';
   top: 0%;
   left: 0%;
-  background: @loaderDimmerColor;
+  background: var(--form-loader-dimmer-color, @loaderDimmerColor);
   width: 100%;
   height: 100%;
-  z-index: @loaderDimmerZIndex;
+  z-index: var(--form-loader-dimmer-z-index, @loaderDimmerZIndex);
 }
 .ui.loading.form:after {
   position: absolute;
@@ -653,7 +653,7 @@
   animation: form-spin @loaderSpeed linear;
   animation-iteration-count: infinite;
 
-  border-radius: @circularRadius;
+  border-radius: var(--circular-radius, @circularRadius);
 
   border-color: @loaderLineColor @loaderFillColor @loaderFillColor @loaderFillColor;
   border-style: solid;
@@ -661,7 +661,7 @@
 
   box-shadow: 0px 0px 0px 1px transparent;
   visibility: visible;
-  z-index: @loaderLineZIndex;
+  z-index: var(--form-loader-dimmer-z-index, @loaderLineZIndex);
 }
 
 @keyframes form-spin {
@@ -990,9 +990,9 @@
   margin-top: 0em;
   margin-bottom: 0em;
   vertical-align: baseline;
-  font-size: @inlineLabelFontSize;
-  font-weight: @inlineLabelFontWeight;
-  color: @inlineLabelColor;
+  font-size: var(--form-inline-label-font-size, @inlineLabelFontSize);
+  font-weight: var(--form-inline-label-font-weight, @inlineLabelFontWeight);
+  color: var(--form-inline-label-color, @inlineLabelColor);
   text-transform: @inlineLabelTextTransform;
 }
 
@@ -1013,7 +1013,7 @@
   margin-bottom: 0em;
 
   vertical-align: middle;
-  font-size: @inlineInputSize;
+  font-size: var(--form-inline-input-size, @inlineInputSize);
 }
 
 /* Label */
@@ -1042,28 +1042,28 @@
 ---------------------*/
 
 .ui.mini.form {
-  font-size: @mini;
+  font-size: var(--mini, @mini);
 }
 .ui.tiny.form {
-  font-size: @tiny;
+  font-size: var(--tiny, @tiny);
 }
 .ui.small.form {
-  font-size: @small;
+  font-size: var(--small, @small);
 }
 .ui.form {
-  font-size: @medium;
+  font-size: var(--medium, @medium);
 }
 .ui.large.form {
-  font-size: @large;
+  font-size: var(--large, @large);
 }
 .ui.big.form {
-  font-size: @big;
+  font-size: var(--big, @big);
 }
 .ui.huge.form {
-  font-size: @huge;
+  font-size: var(--huge, @huge);
 }
 .ui.massive.form {
-  font-size: @massive;
+  font-size: var(--massive, @massive);
 }
 
 .loadUIOverrides();
