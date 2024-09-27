@@ -39,9 +39,9 @@
 /* Default Styling */
 .ui.accordion .title:not(.ui) {
   padding: @titlePadding;
-  font-family: @titleFont;
+  font-family: var(--header-font, @titleFont);
   font-size: @titleFontSize;
-  color: @titleColor;
+  color: var(--text-color, @titleColor);
 }
 
 /* Content */
