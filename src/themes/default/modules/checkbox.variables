@@ -146,7 +146,7 @@
 
 
 /* Toggle */
-@toggleLaneWidth: 3.5rem;
+@toggleLaneWidth: 2.8rem;
 @toggleHandleSize: 1.5rem;
 @toggleTransitionDuration: 0.2s;
 
