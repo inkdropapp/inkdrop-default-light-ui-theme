@@ -1382,6 +1382,61 @@
   --table-header-divider: none;
 
   /*-------------------
+        Checkbox
+  --------------------*/
+  --checkbox-color: var(--text-color);
+  --checkbox-background: var(--white);
+  --checkbox-border-radius: var(--3px);
+  --checkbox-border: 1px solid var(--solid-border-color);
+  --checkbpx-label-color: var(--text-color);
+  --checkbox-hover-background: var(--checkbox-background);
+  --checkbox-hover-border-color: var(--selected-border-color);
+  --checkbox-label-hover-color: var(--hovered-text-color);
+  --checkbox-pressed-background: var(--off-white);
+  --checkbox-pressed-border-color: var(--selected-border-color);
+  --checkbox-pressed-color: var(--selected-text-color);
+  --checkbox-pressed-label-color: var(--selected-text-color);
+  --checkbox-focus-background: var(--white);
+  --checkbox-focus-border-color: var(--focused-form-muted-border-color);
+  --checkbox-focus-check-color: var(--selected-text-color);
+  --checkbox-focus-label-color: var(--selected-text-color);
+  --checkbox-active-background: var(--white);
+  --checkbox-active-border-color: var(--selected-border-color);
+  --checkbox-active-check-opacity: 1;
+  --checkbox-active-check-color: var(--selected-text-color);
+  --checkbox-intermediate-background: var(--checkbox-active-background);
+  --checkbox-intermediate-border-color: var(--checkbox-active-border-color);
+  --checkbox-intermediate-check-opacity: 1;
+  --checkbox-intermediate-check-color: var(--checkbox-active-check-color);
+  --checkbox-active-focus-background: var(--white);
+  --checkbox-active-focus-border-color: var(--checkbox-focus-border-color);
+  --checkbox-active-focus-check-color: var(--selected-text-color);
+  --checkbox-disabled-opacity: 0.5;
+  --checkbox-disabled-label-color: rgba(0, 0, 0, 1);
+  --radio-bullet-color: var(--text-color);
+  --radio-focus-background: var(--checkbox-focus-background);
+  --radio-focus-bullet-color: var(--checkbox-focus-check-color);
+  --radio-active-background: var(--checkbox-active-background);
+  --radio-active-bullet-color: var(--checkbox-active-check-color);
+  --radio-active-focus-background: var(--checkbox-active-focus-background);
+  --radio-active-focus-bullet-color: var(--checkbox-active-focus-check-color);
+  --toggle-off-label-color: var(--checkbox-color);
+  --toggle-lane-background: var(--transparent-black);
+  --toggle-lane-box-shadow: none;
+  --toggle-handle-radius: var(--circular-radius);
+  --toggle-handle-background: var(--white) var(--subtle-gradient);
+  --toggle-handle-box-shadow: var(--subtle-shadow),
+    0px 0px 0px 1px var(--border-color) inset;
+  --toggle-focus-color: var(--very-strong-transparent-black);
+  --toggle-hover-color: var(--toggle-focus-color);
+  --toggle-on-label-color: var(--selected-text-color);
+  --toggle-on-lane-color: var(--primary-color);
+  --toggle-on-handle-box-shadow: var(--toggle-handle-box-shadow);
+  --toggle-on-focus-label-color: var(--toggle-on-label-color);
+  --toggle-on-focus-lane-color: var(--primary-color-focus);
+
+
+  /*-------------------
         Side Bar
   --------------------*/
   --sidebar-background: @sidebarBackground;
