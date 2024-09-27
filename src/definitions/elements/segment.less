@@ -23,12 +23,12 @@
 
 .ui.segment {
   position: relative;
-  background: @background;
-  box-shadow: @boxShadow;
+  background: var(--segment-background, @background);
+  box-shadow: var(--segment-box-shadow, @boxShadow);
   margin: @margin;
   padding: @padding;
-  border-radius: @borderRadius;
-  border: @border;
+  border-radius: var(--segment-border-radius, @borderRadius);
+  border: var(--segment-border, @border);
 }
 
 .ui.segment:first-child {
@@ -336,9 +336,9 @@
   flex-direction: column;
   position: relative;
   margin: @groupedMargin;
-  border: @groupedBorder;
-  box-shadow: @groupedBoxShadow;
-  border-radius: @groupedBorderRadius;
+  border: var(--segment-border, @groupedBorder);
+  box-shadow: var(--segment-box-shadow, @groupedBoxShadow);
+  border-radius: var(--segment-border-radius, @groupedBorderRadius);
 }
 .ui.segments:first-child {
   margin-top: 0em;
@@ -355,9 +355,9 @@
   border-radius: 0px;
   margin: @groupedSegmentMargin;
   width: @groupedSegmentWidth;
-  box-shadow: @groupedSegmentBoxShadow;
-  border: @groupedSegmentBorder;
-  border-top: @groupedSegmentDivider;
+  box-shadow: var(--grouped-segment-box-shadow, @groupedSegmentBoxShadow);
+  border: var(--grouped-segment-border, @groupedSegmentBorder);
+  border-top: var(--grouped-segment-divider, @groupedSegmentDivider);
 }
 
 .ui.segments:not(.horizontal) > .segment:first-child {
@@ -368,7 +368,7 @@
   bottom: 0px;
   margin-bottom: 0em;
   top: @attachedTopOffset;
-  border-radius: @borderRadius @borderRadius 0em 0em;
+  border-radius: var(--segment-border-radius, @borderRadius) var(--segment-border-radius, @borderRadius) 0em 0em;
 }
 
 /* Bottom */
@@ -377,19 +377,18 @@
   bottom: 0px;
   margin-top: 0em;
   margin-bottom: 0em;
-  box-shadow: @attachedBottomBoxShadow;
-  border-radius: 0em 0em @borderRadius @borderRadius;
+  box-shadow: var(--segment-box-shadow);
+  border-radius: 0em 0em var(--segment-border-radius, @borderRadius) var(--segment-border-radius, @borderRadius);
 }
 
 /* Only */
 .ui.segments:not(.horizontal) > .segment:only-child {
-  border-radius: @borderRadius;
+  border-radius: var(--segment-border-radius, @borderRadius);
 }
-
 
 /* Nested Group */
 .ui.segments > .ui.segments {
-  border-top: @groupedSegmentDivider;
+  border-top: var(--grouped-segment-divider, @groupedSegmentDivider);
   margin: @nestedGroupMargin;
 }
 .ui.segments > .segments:first-child {
@@ -406,11 +405,11 @@
   background-color: transparent;
   border-radius: 0px;
   padding: 0em;
-  background-color: @background;
-  box-shadow: @boxShadow;
+  background-color: var(--segment-background, @background);
+  box-shadow: var(--segment-box-shadow, @boxShadow);
   margin: @margin;
-  border-radius: @borderRadius;
-  border: @border;
+  border-radius: var(--segment-border-radius, @borderRadius);
+  border: var(--segment-border, @border);
 }
 
 /* Nested Horizontal Group */
@@ -454,8 +453,8 @@
 ---------------*/
 
 .ui.disabled.segment {
-  opacity: @disabledOpacity;
-  color: @disabledTextColor;
+  opacity: var(--disabled-opacity, @disabledOpacity);
+  color: var(--disabled-text-color, @disabledTextColor);
 }
 
 /*--------------
@@ -795,35 +794,35 @@
 
 .ui.mini.segments .segment,
 .ui.mini.segment {
-  font-size: @mini;
+  font-size: var(--mini, @mini);
 }
 .ui.tiny.segments .segment,
 .ui.tiny.segment {
-  font-size: @tiny;
+  font-size: var(--tiny, @tiny);
 }
 .ui.small.segments .segment,
 .ui.small.segment {
-  font-size: @small;
+  font-size: var(--small, @small);
 }
 .ui.segments .segment,
 .ui.segment {
-  font-size: @medium;
+  font-size: var(--medium, @medium);
 }
 .ui.large.segments .segment,
 .ui.large.segment {
-  font-size: @large;
+  font-size: var(--large, @large);
 }
 .ui.big.segments .segment,
 .ui.big.segment {
-  font-size: @big;
+  font-size: var(--big, @big);
 }
 .ui.huge.segments .segment,
 .ui.huge.segment {
-  font-size: @huge;
+  font-size: var(--huge, @huge);
 }
 .ui.massive.segments .segment,
 .ui.massive.segment {
-  font-size: @massive;
+  font-size: var(--massive, @massive);
 }
 
 .loadUIOverrides();
