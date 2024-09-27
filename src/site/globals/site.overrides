@@ -1282,6 +1282,56 @@
   --form-inline-input-size: var(--relative-medium);
 
   /*-------------------
+        Menu
+  --------------------*/
+  --menu-background: var(--white);
+  --menu-font-weight: normal;
+  --menu-font-family: var(--page-font);
+  --menu-border: 1px solid var(--border-color);
+  --menu-shadow: var(--subtle-shadow);
+  --menu-border-radius: var(--default-border-radius);
+  --menu-item-background: none;
+  --menu-item-text-color: var(--text-color);
+  --menu-item-font-weight: normal;
+  --menu-divider-background: var(--internal-border-color);
+  --menu-hover-item-background: var(--subtle-transparent-black)
+  --menu-hover-item-text-color: var(--selected-text-color);
+  --menu-pressed-item-background: var(--subtle-transparent-black)
+  --menu-pressed-item-text-color: var(--selected-text-color);
+  --menu-active-item-background: var(--transparent-black);
+  --menu-active-item-text-color: var(--selected-text-color);
+  --menu-active-item-font-weight: normal;
+  --menu-active-item-box-shadow: none;
+  --menu-active-hover-item-background: var(--transparent-black);
+  --menu-active-hover-item-color: var(--selected-text-color);
+  --vertical-menu-background: var(--white);
+  --vertical-menu-box-shadow: var(--subtle-shadow);
+  --vertical-menu-item-background: none;
+  --vertical-divider-background: var(--internal-border-color);
+  --tabular-menu-background: none transparent;
+  --tabular-menu-border-width: 1px;
+  --tabular-menu-border-color: var(--solid-border-color);
+  --tabular-menu-text-color: var(--menu-item-text-color);
+  --tabular-menu-hovered-text-color: var(--hovered-text-color);
+  --tabular-menu-active-background: none var(--white);
+  --tabular-menu-active-color: var(--selected-text-color);
+  --tabular-menu-active-box-shadow: none;
+  --tabular-menu-border-radius: var(--default-border-radius);
+  --secondary-menu-background: none;
+  --secondary-menu-item-background: none;
+  --secondary-menu-item-border-radius: var(--default-border-radius);
+  --secondary-menu-header-border: none;
+  --secondary-menu-header-background: none transparent;
+  --secondary-menu-hover-item-background: var(--transparent-black);
+  --secondary-menu-hover-item-color: var(--selected-text-color);
+  --secondary-menu-active-item-background: var(--transparent-black);
+  --secondary-menu-active-item-color: var(--selected-text-color);
+  --secondary-menu-active-hover-item-background: var(--transparent-black);
+  --secondary-menu-active-hover-item-color: var(--selected-text-color);
+  --secondary-vertical-menu-item-border-radius: var(--default-border-radius);
+
+
+  /*-------------------
         Side Bar
   --------------------*/
   --sidebar-background: @sidebarBackground;

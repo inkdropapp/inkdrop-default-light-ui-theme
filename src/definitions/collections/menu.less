@@ -30,12 +30,12 @@
 .ui.menu {
   display: flex;
   margin: @margin;
-  font-family: @fontFamily;
-  background: @background;
-  font-weight: @fontWeight;
-  border: @border;
-  box-shadow: @boxShadow;
-  border-radius: @borderRadius;
+  font-family: var(--menu-font-family, @fontFamily);
+  background: var(--menu-background, @background);
+  font-weight: var(--menu-font-weight, @fontWeight);
+  border: var(--menu-border, @border);
+  box-shadow: var(--menu-shadow, @boxShadow);
+  border-radius: var(--menu-border-radius, @borderRadius);
   min-height: @minHeight;
 }
 
@@ -85,16 +85,16 @@
   flex: 0 0 auto;
   user-select: none;
 
-  background: @itemBackground;
+  background: var(--menu-item-background, @itemBackground);
   padding: @itemVerticalPadding @itemHorizontalPadding;
   text-transform: @itemTextTransform;
-  color: @itemTextColor;
-  font-weight: @itemFontWeight;
+  color: var(--menu-item-text-color, @itemTextColor);
+  font-weight: var(--menu-item-font-weight, @itemFontWeight);
   transition: @itemTransition;
 }
 
 .ui.menu > .item:first-child {
-  border-radius: @borderRadius 0px 0px @borderRadius;
+  border-radius: var(--menu-border-radius, @borderRadius) 0px 0px var(--menu-border-radius, @borderRadius);
 }
 
 /* Border */
@@ -106,7 +106,7 @@
   height: 100%;
 
   width: @dividerSize;
-  background: @dividerBackground;
+  background: var(--menu-divider-background, @dividerBackground);
 }
 
 /*--------------
@@ -404,8 +404,8 @@
 .ui.menu .link.item:hover,
 .ui.menu a.item:hover {
   cursor: pointer;
-  background: @hoverItemBackground;
-  color: @hoverItemTextColor;
+  background: var(--menu-hover-item-background, @hoverItemBackground);
+  color: var(--menu-hover-item-text-color, @hoverItemTextColor);
 }
 
 
@@ -416,8 +416,8 @@
 .ui.link.menu .item:active,
 .ui.menu .link.item:active,
 .ui.menu a.item:active {
-  background: @pressedItemBackground;
-  color: @pressedItemTextColor;
+  background: var(--menu-pressed-item-background, @pressedItemBackground);
+  color: var(--menu-pressed-item-text-color, @pressedItemTextColor);
 }
 
 
@@ -426,10 +426,10 @@
 ---------------*/
 
 .ui.menu .active.item  {
-  background: @activeItemBackground;
-  color: @activeItemTextColor;
-  font-weight: @activeItemFontWeight;
-  box-shadow: @activeItemBoxShadow;
+  background: var(--menu-active-item-background, @activeItemBackground);
+  color: var(--menu-active-item-text-color, @activeItemTextColor);
+  font-weight: var(--menu-active-item-font-weight, @activeItemFontWeight);
+  box-shadow: var(--menu-active-item-box-shadow, @activeItemBoxShadow);
 }
 .ui.menu .active.item > i.icon {
   opacity: @activeIconOpacity;
@@ -441,8 +441,8 @@
 
 .ui.menu .active.item:hover,
 .ui.vertical.menu .active.item:hover {
-  background-color: @activeHoverItemBackground;
-  color: @activeHoverItemColor;
+  background-color: var(--menu-active-hover-item-background, @activeHoverItemBackground);
+  color: var(--menu-active-hover-item-color, @activeHoverItemColor);
 }
 
 
@@ -454,7 +454,7 @@
 .ui.menu .item.disabled:hover {
   cursor: default !important;
   background-color: transparent !important;
-  color: @disabledTextColor !important;
+  color: var(--disabled-text-color, @disabledTextColor) !important;
 }
 
 
@@ -494,22 +494,22 @@ Floated Menu / Item
 .ui.vertical.menu {
   display: block;
   flex-direction: column;
-  background: @verticalBackground;
-  box-shadow: @verticalBoxShadow;
+  background: var(--vertical-menu-background, @verticalBackground);
+  box-shadow: var(--vertical-menu-box-shadow, @verticalBoxShadow);
 }
 
 /*--- Item ---*/
 .ui.vertical.menu .item {
   display: block;
-  background: @verticalItemBackground;
+  background: var(--vertical-menu-item-background, @verticalItemBackground);
   border-top: none;
   border-right: none;
 }
 .ui.vertical.menu > .item:first-child {
-  border-radius: @borderRadius @borderRadius 0px 0px;
+  border-radius: var(--menu-border-radius, @borderRadius) var(--menu-border-radius, @borderRadius) 0px 0px;
 }
 .ui.vertical.menu > .item:last-child {
-  border-radius: 0px 0px @borderRadius @borderRadius;
+  border-radius: 0px 0px var(--menu-border-radius, @borderRadius) var(--menu-border-radius, @borderRadius);
 }
 
 /*--- Label ---*/
@@ -538,7 +538,7 @@ Floated Menu / Item
   left: 0px;
   width: 100%;
   height: @dividerSize;
-  background: @verticalDividerBackground;
+  background: var(--vertical-divider-background, @verticalDividerBackground);
 }
 
 .ui.vertical.menu .item:first-child:before {
@@ -597,8 +597,8 @@ Floated Menu / Item
   border-radius: 0em;
   box-shadow: none !important;
   border: none;
-  background: @tabularBackground;
-  border-bottom: @tabularBorderWidth solid @tabularBorderColor;
+  background: var(--tabular-menu-background, @tabularBackground);
+  border-bottom: var(--tabular-menu-border-width, @tabularBorderWidth) solid var(--tabular-menu-border-color, @tabularBorderColor);
 }
 .ui.tabular.fluid.menu {
   width: @tabularFluidWidth !important;
@@ -611,7 +611,7 @@ Floated Menu / Item
   border-right: @tabularBorderWidth solid transparent;
   border-top: @tabularOppositeBorderWidth solid transparent;
   padding: @tabularVerticalPadding @tabularHorizontalPadding;
-  color: @tabularTextColor;
+  color: var(--tabular-menu-text-color, @tabularTextColor);
 }
 .ui.tabular.menu .item:before {
   display: none;
@@ -620,19 +620,19 @@ Floated Menu / Item
 /* Hover */
 .ui.tabular.menu .item:hover {
   background-color: transparent;
-  color: @tabularHoveredTextColor;
+  color: var(--tabular-menu-hovered-text-color, @tabularHoveredTextColor);
 }
 
 /* Active */
 .ui.tabular.menu .active.item {
-  background: @tabularActiveBackground;
-  color: @tabularActiveColor;
-  border-top-width: @tabularBorderWidth;
-  border-color: @tabularBorderColor;
+  background: var(--tabular-menu-active-background, @tabularActiveBackground);
+  color: var(--tabular-menu-active-color, @tabularActiveColor);
+  border-top-width: var(--tabular-menu-border-width, @tabularBorderWidth);
+  border-color: var(--tabular-menu-border-color, @tabularBorderColor);
   font-weight: @tabularActiveWeight;
-  margin-bottom: -@tabularBorderWidth;
-  box-shadow: @tabularActiveBoxShadow;
-  border-radius: @tabularBorderRadius @tabularBorderRadius 0px 0px !important;
+  margin-bottom: calc(var(--tabular-menu-border-width, @tabularBorderWidth) * -1);
+  box-shadow: var(--tabular-menu-active-box-shadow, @tabularActiveBoxShadow);
+  border-radius: var(--tabular-menu-border-radius, @tabularBorderRadius) var(--tabular-menu-border-radius, @tabularBorderRadius) 0px 0px !important;
 }
 
 /* Coupling with segment for attachment */
@@ -652,24 +652,24 @@ Floated Menu / Item
 
 /* Bottom Vertical Tabular */
 .ui.bottom.tabular.menu {
-  background: @tabularBackground;
+  background: var(--tabular-menu-background, @tabularBackground);
   border-radius: 0em;
   box-shadow: none !important;
   border-bottom: none;
-  border-top: @tabularBorderWidth solid @tabularBorderColor;
+  border-top: var(--tabular-menu-border-width, @tabularBorderWidth) solid var(--tabular-menu-border-color, @tabularBorderColor);
 }
 .ui.bottom.tabular.menu .item {
   background: none;
-  border-left: @tabularBorderWidth solid transparent;
-  border-right: @tabularBorderWidth solid transparent;
-  border-bottom: @tabularBorderWidth solid transparent;
+  border-left: var(--tabular-menu-border-width, @tabularBorderWidth) solid transparent;
+  border-right: var(--tabular-menu-border-width, @tabularBorderWidth) solid transparent;
+  border-bottom: var(--tabular-menu-border-width, @tabularBorderWidth) solid transparent;
   border-top: none;
 }
 .ui.bottom.tabular.menu .active.item {
-  background: @tabularActiveBackground;
-  color: @tabularActiveColor;
-  border-color: @tabularBorderColor;
-  margin: -@tabularBorderWidth 0px 0px 0px;
+  background: var(--tabular-menu-active-background, @tabularActiveBackground);
+  color: var(--tabular-menu-active-color, @tabularActiveColor);
+  border-color: var(--tabular-menu-border-color, @tabularBorderColor);
+  margin: calc(var(--tabular-menu-border-width, @tabularBorderWidth) * -1) 0px 0px 0px;
   border-radius: 0px 0px @tabularBorderRadius @tabularBorderRadius !important;
 }
 
@@ -679,20 +679,20 @@ Floated Menu / Item
   border-radius: 0em;
   box-shadow: none !important;
   border-bottom: none;
-  border-right: @tabularBorderWidth solid @tabularBorderColor;
+  border-right: var(--tabular-menu-border-width, @tabularBorderWidth) solid var(--tabular-menu-border-color, @tabularBorderColor);
 }
 .ui.vertical.tabular.menu .item {
   background: none;
-  border-left: @tabularBorderWidth solid transparent;
-  border-bottom: @tabularBorderWidth solid transparent;
-  border-top: @tabularBorderWidth solid transparent;
+  border-left: var(--tabular-menu-border-width, @tabularBorderWidth) solid transparent;
+  border-bottom: var(--tabular-menu-border-width, @tabularBorderWidth) solid transparent;
+  border-top: var(--tabular-menu-border-width, @tabularBorderWidth) solid transparent;
   border-right: none;
 }
 .ui.vertical.tabular.menu .active.item {
-  background: @tabularActiveBackground;
-  color: @tabularActiveColor;
-  border-color: @tabularBorderColor;
-  margin: 0px -@tabularBorderWidth 0px 0px;
+  background: var(--tabular-menu-active-background, @tabularActiveBackground);
+  color: var(--tabular-menu-active-color, @tabularActiveColor);
+  border-color: var(--tabular-menu-border-color, @tabularBorderColor);
+  margin: 0px calc(var(--tabular-menu-border-width, @tabularBorderWidth) * -1) 0px 0px;
   border-radius: @tabularBorderRadius 0px 0px @tabularBorderRadius !important;
 }
 
@@ -703,28 +703,28 @@ Floated Menu / Item
   box-shadow: none !important;
   border-bottom: none;
   border-right: none;
-  border-left: @tabularBorderWidth solid @tabularBorderColor;
+  border-left: var(--tabular-menu-border-width, @tabularBorderWidth) solid @tabularBorderColor;
 }
 .ui.vertical.right.tabular.menu .item {
   background: none;
-  border-right: @tabularBorderWidth solid transparent;
-  border-bottom: @tabularBorderWidth solid transparent;
-  border-top: @tabularBorderWidth solid transparent;
+  border-right: var(--tabular-menu-border-width, @tabularBorderWidth) solid transparent;
+  border-bottom: var(--tabular-menu-border-width, @tabularBorderWidth) solid transparent;
+  border-top: var(--tabular-menu-border-width, @tabularBorderWidth) solid transparent;
   border-left: none;
 }
 .ui.vertical.right.tabular.menu .active.item {
-  background: @tabularActiveBackground;
-  color: @tabularActiveColor;
-  border-color: @tabularBorderColor;
-  margin: 0px 0px 0px -@tabularBorderWidth;
+  background: var(--tabular-menu-active-background, @tabularActiveBackground);
+  color: var(--tabular-menu-active-color, @tabularActiveColor);
+  border-color: var(--tabular-menu-border-color, @tabularBorderColor);
+  margin: 0px 0px 0px calc(var(--tabular-menu-border-width, @tabularBorderWidth) * -1);
   border-radius: 0px @tabularBorderRadius @tabularBorderRadius 0px !important;
 }
 
 /* Dropdown */
 .ui.tabular.menu .active.dropdown.item {
   margin-bottom: 0px;
-  border-left: @tabularBorderWidth solid transparent;
-  border-right: @tabularBorderWidth solid transparent;
+  border-left: var(--tabular-menu-border-width, @tabularBorderWidth) solid transparent;
+  border-right: var(--tabular-menu-border-width, @tabularBorderWidth) solid transparent;
   border-top: @tabularOppositeBorderWidth solid transparent;
   border-bottom: none;
 }
@@ -772,7 +772,7 @@ Floated Menu / Item
 ---------------*/
 
 .ui.secondary.menu {
-  background: @secondaryBackground;
+  background: var(--secondary-menu-background, @secondaryBackground);
   margin-left: -@secondaryItemSpacing;
   margin-right: -@secondaryItemSpacing;
   border-radius: 0em;
@@ -787,9 +787,9 @@ Floated Menu / Item
   border: none;
   padding: @secondaryItemPadding;
   margin: @secondaryItemMargin;
-  background: @secondaryItemBackground;
+  background: var(--secondary-menu-item-background, @secondaryItemBackground);
   transition: @secondaryItemTransition;
-  border-radius: @secondaryItemBorderRadius;
+  border-radius: var(--secondary-menu-item-border-radius, @secondaryItemBorderRadius);
 }
 
 /* No Divider */
@@ -800,8 +800,8 @@ Floated Menu / Item
 /* Header */
 .ui.secondary.menu .header.item {
   border-radius: 0em;
-  border-right: @secondaryHeaderBorder;
-  background: @secondaryHeaderBackground;
+  border-right: var(--secondary-menu-header-border, @secondaryHeaderBorder);
+  background: var(--secondary-menu-header-background, @secondaryHeaderBackground);
 }
 
 /* Image */
@@ -813,23 +813,23 @@ Floated Menu / Item
 .ui.secondary.menu .dropdown.item:hover,
 .ui.secondary.menu .link.item:hover,
 .ui.secondary.menu a.item:hover {
-  background: @secondaryHoverItemBackground;
-  color: @secondaryHoverItemColor;
+  background: var(--secondary-menu-hover-item-background, @secondaryHoverItemBackground);
+  color: var(--secondary-menu-hover-item-color, @secondaryHoverItemColor);
 }
 
 /* Active */
 .ui.secondary.menu .active.item {
   box-shadow: none;
-  background: @secondaryActiveItemBackground;
-  color: @secondaryActiveItemColor;
-  border-radius: @secondaryItemBorderRadius;
+  background: var(--secondary-menu-active-item-background, @secondaryActiveItemBackground);
+  color: var(--secondary-menu-active-item-color, @secondaryActiveItemColor);
+  border-radius: var(--secondary-menu-item-border-radius, @secondaryItemBorderRadius);
 }
 
 /* Active Hover */
 .ui.secondary.menu .active.item:hover {
   box-shadow: none;
-  background: @secondaryActiveHoverItemBackground;
-  color: @secondaryActiveHoverItemColor;
+  background: var(--secondary-menu-active-hover-item-background, @secondaryActiveHoverItemBackground);
+  color: var(--secondary-menu-active-hover-item-color, @secondaryActiveHoverItemColor);
 }
 
 
@@ -878,7 +878,7 @@ Floated Menu / Item
 .ui.secondary.vertical.menu > .item {
   border: none;
   margin: @secondaryVerticalItemMargin;
-  border-radius: @secondaryVerticalItemBorderRadius !important;
+  border-radius: var(--secondary-vertical-menu-item-border-radius, @secondaryVerticalItemBorderRadius) !important;
 }
 .ui.secondary.vertical.menu > .header.item {
   border-radius: 0em;
