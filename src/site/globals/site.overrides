@@ -478,9 +478,6 @@
   --loader-offset: @loaderOffset;
   --loader-margin: @loaderMargin;
 
-  /* Rendered Scrollbar Width */
-  --scrollbar-width: @scrollbarWidth;
-
   /* Maximum Single Character Glyph Width, aka Capital "W" */
   --glyph-width: @glyphWidth;
 
