@@ -13,7 +13,7 @@
             Theme
 *******************************/
 
-@type    : 'global';
+@type : 'global';
 @element : 'site';
 
 @import (multiple) '../../theme.config';
@@ -30,20 +30,20 @@ body {
 }
 
 html {
-  font-size: @emSize;
+  font-size: var(--em-size, @emSize);
 }
 
 body {
   margin: 0px;
   padding: 0px;
-  overflow-x: @pageOverflowX;
-  min-width: @pageMinWidth;
-  background: @pageBackground;
-  font-family: @pageFont;
-  font-size: @fontSize;
-  line-height: @lineHeight;
-  color: @textColor;
-  font-smoothing: @fontSmoothing;
+  overflow-x: var(--page-overflow-x, @pageOverflowX);
+  min-width: var(--page-min-width, @pageMinWidth);
+  background: var(--page-background, @pageBackground);
+  font-family: var(--page-font, @pageFont);
+  font-size: var(--font-size, @fontSize);
+  line-height: var(--line-height, @lineHeight);
+  color: var(--text-color, @textColor);
+  font-smoothing: var(--font-smoothing, @fontSmoothing);
 }
 
 /*******************************
@@ -55,28 +55,32 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: @headerFont;
-  line-height: @headerLineHeight;
-  margin: @headerMargin;
-  font-weight: @headerFontWeight;
+  font-family: var(--header-font, @headerFont);
+  line-height: var(--header-line-height, @headerLineHeight);
+  margin: var(--header-margin, @headerMargin);
+  font-weight: var(--header-font-weight, @headerFontWeight);
   padding: 0em;
 }
 
 h1 {
   min-height: 1rem;
-  font-size: @h1;
+  font-size: var(--h1, @h1);
 }
+
 h2 {
-  font-size: @h2;
+  font-size: var(--h2, @h2);
 }
+
 h3 {
-  font-size: @h3;
+  font-size: var(--h3, @h3);
 }
+
 h4 {
-  font-size: @h4;
+  font-size: var(--h4, @h4);
 }
+
 h5 {
-  font-size: @h5;
+  font-size: var(--h5, @h5);
 }
 
 h1:first-child,
@@ -101,12 +105,14 @@ h5:last-child {
 *******************************/
 
 p {
-  margin: @paragraphMargin;
-  line-height: @paragraphLineHeight;
+  margin: var(--paragraph-margin, @paragraphMargin);
+  line-height: var(--paragraph-line-height, @paragraphLineHeight);
 }
+
 p:first-child {
   margin-top: 0em;
 }
+
 p:last-child {
   margin-bottom: 0em;
 }
@@ -116,12 +122,13 @@ p:last-child {
 --------------------*/
 
 a {
-  color: @linkColor;
-  text-decoration: @linkUnderline;
+  color: var(--link-color, @linkColor);
+  text-decoration: var(--link-underline, @linkUnderline);
 }
+
 a:hover {
-  color: @linkHoverColor;
-  text-decoration: @linkHoverUnderline;
+  color: var(--link-hover-color, @linkHoverColor);
+  text-decoration: var(--link-hover-underline, @linkHoverUnderline);
 }
 
 
@@ -137,19 +144,23 @@ a:hover {
     width: @customScrollbarWidth;
     height: @customScrollbarHeight;
   }
+
   body ::-webkit-scrollbar-track {
     background: @trackBackground;
     border-radius: @trackBorderRadius;
   }
+
   body ::-webkit-scrollbar-thumb {
     cursor: pointer;
     border-radius: @thumbBorderRadius;
     background: @thumbBackground;
     transition: @thumbTransition;
   }
+
   body ::-webkit-scrollbar-thumb:window-inactive {
     background: @thumbInactiveBackground;
   }
+
   body ::-webkit-scrollbar-thumb:hover {
     background: @thumbHoverBackground;
   }
@@ -158,12 +169,15 @@ a:hover {
   body .ui.inverted::-webkit-scrollbar-track {
     background: @trackInvertedBackground;
   }
+
   body .ui.inverted::-webkit-scrollbar-thumb {
     background: @thumbInvertedBackground;
   }
+
   body .ui.inverted::-webkit-scrollbar-thumb:window-inactive {
     background: @thumbInvertedInactiveBackground;
   }
+
   body .ui.inverted::-webkit-scrollbar-thumb:hover {
     background: @thumbInvertedHoverBackground;
   }
@@ -175,33 +189,37 @@ a:hover {
 
 /* Site */
 ::-webkit-selection {
-  background-color: @highlightBackground;
-  color: @highlightColor;
+  background-color: var(--highlight-background, @highlightBackground);
+  color: var(--highlight-color, @highlightColor);
 }
+
 ::-moz-selection {
-  background-color: @highlightBackground;
-  color: @highlightColor;
+  background-color: var(--highlight-background, @highlightBackground);
+  color: var(--highlight-color, @highlightColor);
 }
+
 ::selection {
-  background-color: @highlightBackground;
-  color: @highlightColor;
+  background-color: var(--highlight-background, @highlightBackground);
+  color: var(--highlight-color, @highlightColor);
 }
 
 /* Form */
 textarea::-webkit-selection,
 input::-webkit-selection {
-  background-color: @inputHighlightBackground;
-  color: @inputHighlightColor;
+  background-color: var(--input-highlight-background, @inputHighlightBackground);
+  color: var(--input-highlight-color, @inputHighlightColor);
 }
+
 textarea::-moz-selection,
 input::-moz-selection {
-  background-color: @inputHighlightBackground;
-  color: @inputHighlightColor;
+  background-color: var(--input-highlight-background, @inputHighlightBackground);
+  color: var(--input-highlight-color, @inputHighlightColor);
 }
+
 textarea::selection,
 input::selection {
-  background-color: @inputHighlightBackground;
-  color: @inputHighlightColor;
+  background-color: var(--input-highlight-background, @inputHighlightBackground);
+  color: var(--input-highlight-color, @inputHighlightColor);
 }
 
 .addScrollbars();
