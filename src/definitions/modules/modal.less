@@ -28,26 +28,27 @@
   z-index: @zIndex;
   text-align: left;
 
-  border: @border;
-  box-shadow: @boxShadow;
+  color: var(--text-color);
+  border: var(--modal-border, @border);
+  box-shadow: var(--modal-box-shadow, @boxShadow);
   transform-origin: @transformOrigin;
 
   flex: 0 0 auto;
 
-  border-radius: @borderRadius;
+  border-radius: var(--modal-border-radius, @borderRadius);
   user-select: text;
   will-change: top, left, margin, transform, opacity;
 }
 
 .ui.modal > :first-child:not(.icon),
 .ui.modal > .icon:first-child + * {
-  border-top-left-radius: @borderRadius;
-  border-top-right-radius: @borderRadius;
+  border-top-left-radius: var(--modal-border-radius, @borderRadius);
+  border-top-right-radius: var(--modal-border-radius, @borderRadius);
 }
 
 .ui.modal > :last-child {
-  border-bottom-left-radius: @borderRadius;
-  border-bottom-right-radius: @borderRadius;
+  border-bottom-left-radius: var(--modal-border-radius, @borderRadius);
+  border-bottom-right-radius: var(--modal-border-radius, @borderRadius);
 }
 
 /*******************************
@@ -65,9 +66,9 @@
   right: @closeRight;
   z-index: 1;
 
-  opacity: @closeOpacity;
-  font-size: @closeSize;
-  color: @closeColor;
+  opacity: var(--modal-box-close-opacity, @closeOpacity);
+  font-size: var(--modal-box-close-size, @closeSize);
+  color: var(--modal-box-close-color, @closeColor);
 
   width: @closeHitbox;
   height: @closeHitbox;
@@ -84,18 +85,19 @@
 .ui.modal > .header {
   display: block;
   font-family: @headerFontFamily;
-  background: @headerBackground;
+  background: var(--modal-box-header-background, @headerBackground);
   margin: @headerMargin;
   padding: @headerPadding;
   box-shadow: @headerBoxShadow;
+  user-select: none;
 
-  color: @headerColor;
-  border-bottom: @headerBorder;
+  color: var(--modal-box-header-color, @headerColor);
+  border-bottom: var(--modal-box-header-border, @headerBorder);
 }
 .ui.modal > .header:not(.ui) {
-  font-size: @headerFontSize;
+  font-size: var(--modal-box-header-font-size, @headerFontSize);
   line-height: @headerLineHeight;
-  font-weight: @headerFontWeight;
+  font-weight: var(--modal-box-header-font-weight, @headerFontWeight);
 }
 
 /*--------------
@@ -105,10 +107,10 @@
 .ui.modal > .content {
   display: block;
   width: 100%;
-  font-size: @contentFontSize;
+  font-size: var(--modal-box-content-font-size, @contentFontSize);
   line-height: @contentLineHeight;
   padding: @contentPadding;
-  background: @contentBackground;
+  background: var(--modal-box-content-background, @contentBackground);
 }
 .ui.modal > .image.content {
   display: flex;
@@ -166,6 +168,7 @@
   padding: @actionPadding;
   border-top: @actionBorder;
   text-align: @actionAlign;
+  user-select: none;
 }
 .ui.modal .actions > .button {
   margin-left: @buttonDistance;

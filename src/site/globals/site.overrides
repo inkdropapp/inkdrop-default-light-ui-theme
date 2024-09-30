@@ -1479,6 +1479,31 @@
   --dropdown-error-item-active-background: #FDCFCF;
 
   /*-------------------
+        Modal
+  --------------------*/
+  --modal-border: none;
+  --modal-border-radius: var(--default-border-radius);
+  --modal-box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.067),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.097),
+    0 12.5px 10px rgba(0, 0, 0, 0.12),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.143),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.173),
+    0 100px 80px rgba(0, 0, 0, 0.24);
+  --modal-box-close-opacity: 0.8;
+  --modal-box-close-size: 1.25em;
+  --modal-box-close-color: var(--white);
+  --modal-box-header-background: var(--white);
+  --modal-box-header-color: var(--dark-text-color);
+  --modal-box-header-border: 1px solid var(--solid-color);
+  --modal-box-header-font-size: 1rem;
+  --modal-box-header-font-weight: var(--font-weights-bold);
+  --modal-box-content-font-size: 1em;
+  --modal-box-content-background: var(--white);
+  --modal-box-actions-background: var(--off-white);
+  --modal-box-actions-border: 1px solid var(--border-color);
+
+  /*-------------------
         Side Bar
   --------------------*/
   --sidebar-background: @sidebarBackground;
