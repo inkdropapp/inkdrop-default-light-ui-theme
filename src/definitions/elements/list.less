@@ -335,11 +335,11 @@ ol.ui.list ol li,
 .ui.list .list > .disabled.item,
 .ui.list > .disabled.item {
   pointer-events: none;
-  color: @disabledColor !important;
+  color: var(--disabled-text-color) !important;
 }
 .ui.inverted.list .list > .disabled.item,
 .ui.inverted.list > .disabled.item {
-  color: @invertedDisabledColor !important;
+  color: var(--inverted-disabled-text-color) !important;
 }
 
 /*-------------------
@@ -462,11 +462,11 @@ ol.ui.list ol li,
 .ui.selection.list .list > .item,
 .ui.selection.list > .item {
   cursor: pointer;
-  background: @selectionListBackground;
+  background: transparent;
   padding: @selectionListItemVerticalPadding @selectionListItemHorizontalPadding;
   margin: @selectionListItemMargin;
-  color: @selectionListColor;
-  border-radius: @selectionListItemBorderRadius;
+  color: var(--unselected-text-color);
+  border-radius: var(--selection-list-item-border-radius, @selectionListItemBorderRadius);
   transition: @selectionListTransition;
 }
 .ui.selection.list .list > .item:last-child,
@@ -475,18 +475,18 @@ ol.ui.list ol li,
 }
 .ui.selection.list.list > .item:hover,
 .ui.selection.list > .item:hover {
-  background: @selectionListHoverBackground;
-  color: @selectionListHoverColor;
+  background: var(--selection-list-hover-background, @selectionListHoverBackground);
+  color: var(--selection-list-hover-color, @selectionListHoverColor);
 }
 .ui.selection.list .list > .item:active,
 .ui.selection.list > .item:active {
-  background: @selectionListDownBackground;
-  color: @selectionListDownColor;
+  background: var(--selection-list-down-background, @selectionListDownBackground);
+  color: var(--selection-list-down-color, @selectionListDownColor);
 }
 .ui.selection.list .list > .item.active,
 .ui.selection.list > .item.active {
-  background: @selectionListActiveBackground;
-  color: @selectionListActiveColor;
+  background: var(--selection-list-active-background, @selectionListActiveBackground);
+  color: var(--selection-list-active-color, @selectionListActiveColor);
 }
 
 /* Inverted */

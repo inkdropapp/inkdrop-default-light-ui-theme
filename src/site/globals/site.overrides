@@ -1217,6 +1217,18 @@
   --label-basic-hover-box-shadow: var(--label-basic-box-shadow);
 
   /*-------------------
+        List
+  --------------------*/
+  --selection-list-item-border-radius: 0.5em;
+  --selection-list-hover-background: var(--subtle-transparent-black);
+  --selection-list-hover-color: var(--hovered-text-color);
+  --selection-list-down-background: var(--transparent-black);
+  --selection-list-down-color: var(--pressed-text-color);
+  --selection-list-active-background: var(--transparent-black);
+  --selection-list-active-color: var(--selected-text-color);
+  
+
+  /*-------------------
         Loader
   --------------------*/
   --loader-shape-border-color: var(--loader-line-color) transparent transparent;
