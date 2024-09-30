@@ -518,7 +518,7 @@
 @loaderMargin : @loaderOffset 0em 0em @loaderOffset;
 
 /* Rendered Scrollbar Width */
-@scrollbarWidth: 17px;
+@scrollbarWidth: 6px;
 
 /* Maximum Single Character Glyph Width, aka Capital "W" */
 @glyphWidth: 1.1em;

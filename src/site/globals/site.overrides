@@ -1226,7 +1226,7 @@
   --selection-list-down-color: var(--pressed-text-color);
   --selection-list-active-background: var(--transparent-black);
   --selection-list-active-color: var(--selected-text-color);
-  
+
 
   /*-------------------
         Loader
@@ -1306,9 +1306,9 @@
   --menu-item-text-color: var(--text-color);
   --menu-item-font-weight: normal;
   --menu-divider-background: var(--internal-border-color);
-  --menu-hover-item-background: var(--subtle-transparent-black)
+  --menu-hover-item-background: var(--subtle-transparent-black);
   --menu-hover-item-text-color: var(--selected-text-color);
-  --menu-pressed-item-background: var(--subtle-transparent-black)
+  --menu-pressed-item-background: var(--subtle-transparent-black);
   --menu-pressed-item-text-color: var(--selected-text-color);
   --menu-active-item-background: var(--transparent-black);
   --menu-active-item-text-color: var(--selected-text-color);
@@ -1356,28 +1356,22 @@
   --message-list-opacity: 0.85;
   --positive-box-shadow:
     0px 0px 0px 1px var(--positive-border-color) inset,
-    var(--message-shadow-shadow)
-  ;
+    var(--message-shadow-shadow);
   --negative-box-shadow:
     0px 0px 0px 1px var(--negative-border-color) inset,
-    var(--message-shadow-shadow)
-  ;
+    var(--message-shadow-shadow);
   --info-box-shadow:
     0px 0px 0px 1px var(--info-border-color) inset,
-    var(--message-shadow-shadow)
-  ;
+    var(--message-shadow-shadow);
   --warning-box-shadow:
     0px 0px 0px 1px var(--warning-border-color) inset,
-    var(--message-shadow-shadow)
-  ;
+    var(--message-shadow-shadow);
   --error-box-shadow:
     0px 0px 0px 1px var(--error-border-color) inset,
-    var(--message-shadow-shadow)
-  ;
+    var(--message-shadow-shadow);
   --success-box-shadow:
     0px 0px 0px 1px var(--success-border-color) inset,
-    var(--message-shadow-shadow)
-  ;
+    var(--message-shadow-shadow);
 
   /*-------------------
         Table
@@ -1506,86 +1500,86 @@
   /*-------------------
         Side Bar
   --------------------*/
-  --sidebar-background: @sidebarBackground;
-  --sidebar-menu-item-inactive-background: @sidebarMenuItemInactiveBackground;
-  --sidebar-menu-item-active-background: @sidebarMenuItemActiveBackground;
-  --sidebar-menu-section-color: @sidebarMenuSectionColor;
-  --sidebar-menu-section-separator-color: @sidebarMenuSectionSeparatorColor;
-  --sidebar-menu-item-color: @sidebarMenuItemColor;
-  --sidebar-menu-action-color: @sidebarMenuActionColor;
-  --sidebar-menu-action-hover-color: @sidebarMenuActionHoverColor;
-  --sidebar-sync-status-view-background: @sidebarSyncStatusViewBackground;
-  --sidebar-sync-status-view-text-color: @sidebarSyncStatusViewTextColor;
-  --sidebar-sync-status-view-detail-color: @sidebarSyncStatusViewDetailColor;
-  --sidebar-scrollbar-width: @sidebarScrollbarWidth;
-  --sidebar-scrollbar-track-background: @sidebarScrollbarTrackBackground;
-  --sidebar-scrollbar-thumb-background: @sidebarScrollbarThumbBackground;
+  --sidebar-background: #171A21;
+  --sidebar-menu-item-inactive-background: hsl(var(--hsl-slate-600) / 70%);
+  --sidebar-menu-item-active-background: hsl(var(--hsl-blue-300) / 50%);
+  --sidebar-menu-section-color: var(--inverted-unselected-text-color);
+  --sidebar-menu-section-separator-color: rgba(255, 255, 255, 0.1);
+  --sidebar-menu-item-color: var(--inverted-light-text-color);
+  --sidebar-menu-action-color: var(--inverted-disabled-text-color);
+  --sidebar-menu-action-hover-color: var(--inverted-light-text-color);
+  --sidebar-sync-status-view-background: #12151A;
+  --sidebar-sync-status-view-text-color: var(--inverted-muted-text-color);
+  --sidebar-sync-status-view-detail-color: var(--inverted-unselected-text-color);
+  --sidebar-scrollbar-width: 6px;
+  --sidebar-scrollbar-track-background: rgba(255, 255, 255, 0.02);
+  --sidebar-scrollbar-thumb-background: rgba(255, 255, 255, 0.2);
 
   /*-------------------
         Scroll Bar
   --------------------*/
-  --scrollbar-width: @scrollbarWidth;
-  --scrollbar-track-background: @scrollbarTrackBackground;
-  --scrollbar-thumb-background: @scrollbarThumbBackground;
+  --scrollbar-width: 6px;
+  --scrollbar-track-background: rgba(0, 0, 0, 0.05);
+  --scrollbar-thumb-background: rgba(0, 0, 0, 0.2);
 
   /*-------------------
         Note List Bar
   --------------------*/
-  --note-list-bar-background: @noteListBarBackground;
-  --note-list-bar-pinned-section-header-background: @noteListBarPinnedSectionHeaderBackground;
-  --note-list-bar-pinned-section-header-border-bottom: @noteListBarPinnedSectionHeaderBorderBottom;
-  --note-list-bar-pinned-section-footer-border-bottom: @noteListBarPinnedSectionFooterBorderBottom;
-  --note-list-view-item-color: @noteListViewItemColor;
-  --note-list-view-item-separator-border: @noteListViewItemSeparatorBorder;
-  --note-list-view-item-date-color: @noteListViewItemDateColor;
-  --note-list-view-item-tag-color: @noteListViewItemTagColor;
-  --note-list-view-item-inactive-background: @noteListViewItemInactiveBackground;
-  --note-list-view-item-active-background: @noteListViewItemActiveBackground;
-  --note-list-view-item-active-color: @noteListViewItemActiveColor;
-  --note-list-view-item-active-date-color: @noteListViewItemActiveDateColor;
-  --note-list-view-item-active-tag-color: @noteListViewItemActiveTagColor;
-  --note-list-view-item-focus-inner-shadow: @noteListViewItemFocusInnerShadow;
-  --note-search-bar-background: @noteSearchBarBackground;
-  --note-search-bar-border-bottom: @noteSearchBarBorderBottom;
-  --note-search-bar-input-border: @noteSearchBarInputBorder;
-  --note-search-bar-input-background: @noteSearchBarInputBackground;
+  --note-list-bar-background: rgb(245, 245, 244);
+  --note-list-bar-pinned-section-header-background: #e6e6e6;
+  --note-list-bar-pinned-section-header-border-bottom: none;
+  --note-list-bar-pinned-section-footer-border-bottom: 4px solid #ccc;
+  --note-list-view-item-color: var(--muted-text-color);
+  --note-list-view-item-separator-border: 1px solid var(--white-down);
+  --note-list-view-item-date-color: var(--primary-color);
+  --note-list-view-item-tag-color: var(--blue-focus);
+  --note-list-view-item-inactive-background: hsl(var(--hsl-sky-800) / 20%);
+  --note-list-view-item-active-background: var(--primary-color);
+  --note-list-view-item-active-color: var(--inverted-text-color);
+  --note-list-view-item-active-date-color: var(--inverted-text-color);
+  --note-list-view-item-active-tag-color: var(--inverted-text-color);
+  --note-list-view-item-focus-inner-shadow: none;
+  --note-search-bar-background: rgb(245, 245, 244);
+  --note-search-bar-border-bottom: rgba(255, 255, 255, 0.8);
+  --note-search-bar-input-border: 1px solid transparent;
+  --note-search-bar-input-background: var(--input-background);
 
   /*-------------------
         Editor
   --------------------*/
-  --editor-background: @editorBackground;
+  --editor-background: rgb(255, 255, 255);
 
   /*-------------------
         Header Note Menu
   --------------------*/
-  --header-note-menu-background: @headerNoteMenuBackground;
-  --header-note-menu-color: @headerNoteMenuColor;
-  --header-note-menu-action-item-active-background: @headerNoteMenuActionItemActiveBackground;
-  --header-note-menu-action-item-active-border: @headerNoteMenuActionItemActiveBorder;
-  --header-note-menu-action-item-separator-border: @headerNoteMenuActionItemSeparatorBorder;
-  --header-note-menu-encrypt-button-color: @headerNoteMenuEncryptButtonColor;
-  --header-note-menu-encrypt-button-background: @headerNoteMenuEncryptButtonBackground;
+  --header-note-menu-background: transparent;
+  --header-note-menu-color: var(--light-text-color);
+  --header-note-menu-action-item-active-background: var(--info-background-color);
+  --header-note-menu-action-item-active-border: 1px solid var(--info-border-color);
+  --header-note-menu-action-item-separator-border: 1px solid var(--white-down);
+  --header-note-menu-encrypt-button-color: var(--yellow-text-color);
+  --header-note-menu-encrypt-button-background: var(--yellow-background);
 
   /*-------------------
         Preferences
   --------------------*/
-  --preferences-sidebar-background: @preferencesSidebarBackground;
-  --preferences-sidebar-item-active-background: @preferencesSidebarItemActiveBackground;
-  --preferences-view-background: @preferencesViewBackground;
+  --preferences-sidebar-background: rgb(245, 245, 244);
+  --preferences-sidebar-item-active-background: rgba(79, 142, 255, 0.2);
+  --preferences-view-background: rgb(255, 255, 255);
 
   /*-------------------
         Task Icons
   --------------------*/
-  --task-icon-active: @taskIconActive;
-  --task-icon-onhold: @taskIconOnHold;
-  --task-icon-completed: @taskIconCompleted;
-  --task-icon-dropped: @taskIconDropped;
+  --task-icon-active: hsl(var(--hsl-slate-400));
+  --task-icon-onhold: hsl(var(--hsl-amber-500));
+  --task-icon-completed: hsl(var(--hsl-emerald-500));
+  --task-icon-dropped: hsl(var(--hsl-rose-400));
 
   /*-------------------
     Task Progress View
   --------------------*/
-  --task-progress-view-border-color: @taskProgressViewBorderColor;
-  --task-progress-view-background-color: @taskProgressViewBackgroundColor;
-  --task-progress-view-foreground-color: @taskProgressViewForegroundColor;
-  --task-progress-view-completed-color: @taskProgressViewCompletedColor;
+  --task-progress-view-border-color: hsl(var(--hsl-gray-950) / 30%);
+  --task-progress-view-background-color: hsl(var(--hsl-gray-950) / 30%);
+  --task-progress-view-foreground-color: hsl(var(--hsl-white) / 60%);
+  --task-progress-view-completed-color: hsl(var(--hsl-green-500));
 }
