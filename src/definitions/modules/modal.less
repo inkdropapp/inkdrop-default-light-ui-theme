@@ -164,9 +164,9 @@
 ---------------*/
 
 .ui.modal > .actions {
-  background: @actionBackground;
+  background: var(--modal-box-actions-background, @actionBackground);
   padding: @actionPadding;
-  border-top: @actionBorder;
+  border-top: var(--modal-box-actions-border, @actionBorder);
   text-align: @actionAlign;
   user-select: none;
 }
