@@ -1,7 +1,0 @@
-/*******************************
-        Global Overrides
-*******************************/
-
-.sidebar-layout-content {
-  color-scheme: dark;
-}
