@@ -974,12 +974,14 @@
     --loader-text-color: var(--text-color);
 
     /*-------------------
-          Semgnet
+          Segment
     --------------------*/
     --segment-background: var(--white);
     --segment-border: 1px solid var(--border-color);
     --segment-box-shadow: var(--subtle-shadow);
     --segment-border-radius: var(--default-border-radius);
+    --secondary-segment-background: var(--dark-white);
+    --secondary-segment-color: var(--muted-text-color);
     --grouped-segment-box-shadow: none;
     --grouped-segment-border: none;
     --grouped-segment-divider: 1px solid var(--border-color);
@@ -991,6 +993,7 @@
       0 4px 6px hsl(var(--hsl-neutral-900) / .04),
       0 8px 12px -1px hsl(var(--hsl-neutral-900) / .03);
     --grouped-segment-group-border-radius: var(--default-border-radius);
+    --grouped-segment-hover-background: var(--off-white);
     /*-------------------
           Form
     --------------------*/
