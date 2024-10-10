@@ -994,6 +994,7 @@
       0 8px 12px -1px hsl(var(--hsl-neutral-900) / .03);
     --grouped-segment-group-border-radius: var(--default-border-radius);
     --grouped-segment-hover-background: var(--off-white);
+
     /*-------------------
           Form
     --------------------*/
@@ -1087,6 +1088,10 @@
     --secondary-menu-active-hover-item-background: var(--transparent-black);
     --secondary-menu-active-hover-item-color: var(--selected-text-color);
     --secondary-vertical-menu-item-border-radius: var(--default-border-radius);
+    --secondary-vertical-pointing-menu-border-right-color: var(--border-color);
+    --secondary-pointing-menu-hover-text-color: var(--text-color);
+    --secondary-pointing-menu-active-item-color: var(--selected-text-color);
+    --secondary-pointing-menu-active-hover-item-color: var(--selected-text-color);
     /*-------------------
           Message
     --------------------*/
