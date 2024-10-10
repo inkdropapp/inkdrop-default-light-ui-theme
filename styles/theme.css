@@ -1,19 +1,4 @@
   :root {
-
-    /*-------------------
-         Fonts
-    --------------------*/
-    --font-name: -apple-system, BlinkMacSystemFont, Segoe UI, 'Lato';
-    --font-smoothing: antialiased;
-    --header-font: -apple-system, BlinkMacSystemFont, Segoe UI, 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-    --page-font: -apple-system, BlinkMacSystemFont, Segoe UI, 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-    --google-font-name: -apple-system, BlinkMacSystemFont, Segoe UI, 'Lato';
-    --import-google-fonts: false;
-    --google-font-sizes: '400,700,400italic,700italic';
-    --google-subset: 'latin';
-    --google-protocol: 'https://';
-    --google-font-request: '-apple-system, BlinkMacSystemFont, Segoe UI, ' Lato':400,700,400italic,700italic&subset=latin';
-
     /*-------------------
         Base Sizes
     --------------------*/
