@@ -1329,4 +1329,22 @@
   --task-icon-dropped: hsl(var(--hsl-rose-400));
 }
 
+body.acrylic-window {
+  --page-background: transparent;
+  --editor-drawer-background: hsl(var(--hsl-white));
+  --sidebar-background: hsl(var(--hsl-gray-50) / 20%);
+  --sidebar-color-scheme: light;
+  --sidebar-menu-item-inactive-background: hsl(var(--hsl-blue-600) / 70%);
+  --sidebar-menu-item-active-background: hsl(var(--hsl-blue-800) / 50%);
+  --sidebar-menu-section-color: var(--muted-text-color);
+  --sidebar-menu-item-color: var(--dark-text-color);
+  --sidebar-menu-active-item-color: var(--inverted-light-text-color);
+  --sidebar-menu-action-color: var(--disabled-text-color);
+  --sidebar-menu-action-hover-color: var(--light-text-color);
+  --sidebar-sync-status-view-background: hsl(var(--hsl-gray-100) / 50%);
+  --sidebar-sync-status-view-text-color: var(--muted-text-color);
+  --sidebar-sync-status-view-detail-color: var(--unselected-text-color);
+  --sidebar-sync-status-view-background: transparent;
+  --sidebar-sync-status-view-border-top: 1px solid var(--border-color);
+  --inline-dropdown-menu-background: hsl(var(--hsl-white));
 }
