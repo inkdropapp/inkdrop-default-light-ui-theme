@@ -1,6 +1,6 @@
 {
   "name": "default-light-ui",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "theme": "ui",
   "description": "Default Light UI Theme for Inkdrop",
   "styleSheets": [
