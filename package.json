@@ -11,10 +11,16 @@
     "inkdrop",
     "markdown"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inkdropapp/defualt-light-ui.git"
+  },
   "author": "Takuya Matsuyama<t@inkdrop.app>",
   "license": "MIT",
-  "devDependencies": {},
+  "devDependencies": {
+    "@inkdropapp/theme-dev-helpers": "^0.2.2"
+  },
   "engines": {
-    "inkdrop": "^5.8.0"
+    "inkdrop": "^5.9.0"
   }
 }
