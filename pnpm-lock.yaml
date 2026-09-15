@@ -9,19 +9,19 @@ importers:
   .:
     devDependencies:
       '@inkdropapp/theme-dev-helpers':
-        specifier: ^0.6.4
-        version: 0.6.4(@types/node@25.9.2)
+        specifier: ^0.6.5
+        version: 0.6.5(@types/node@25.9.2)
 
 packages:
 
-  '@inkdropapp/base-ui-theme@0.7.7':
-    resolution: {integrity: sha512-ZdqrcyhtSuBSuqeXkhTRdtRDWXdwknFj4rKDdoLkbmgpDolb2YZJP9GelQLb7gMAk6W/LCuXLe4UUIrd/12SgQ==}
+  '@inkdropapp/base-ui-theme@0.7.8':
+    resolution: {integrity: sha512-s3O/MVfC4qvJ6Gr5lbUCn4X1hNfljH1VnbkRNj5G4QqtXFmChcmy/wcCnkrsBNtLJVClcAMk6XzTzbgYuyOVMA==}
 
   '@inkdropapp/css@0.9.12':
     resolution: {integrity: sha512-T7qDEe7mtjoYYZFR6eORV5cSGS6FSWLSoArl46lBVI1dEArFLSEauA4zQgWP1kV66HABqQKXQ+m9Cc3lxgOiEw==}
 
-  '@inkdropapp/theme-dev-helpers@0.6.4':
-    resolution: {integrity: sha512-ld4pXKeGb66fqfk3o+/6Mh/fe2eKITRfBkaY09cB5XQfkxWlGYAFFu2vC0Dq8i0SBksYhbnY4xklbazoY9VEgA==}
+  '@inkdropapp/theme-dev-helpers@0.6.5':
+    resolution: {integrity: sha512-/HNRc2TswYpZjgd1urAPai4ogZ74Wgwez4bhMVg/oaMxQLCXCNVYRrrqDolEhUYMQhZif8a0OTn0X5wTuznDrg==}
     engines: {node: '>=24'}
     hasBin: true
 
@@ -601,15 +601,15 @@ packages:
 
 snapshots:
 
-  '@inkdropapp/base-ui-theme@0.7.7': {}
+  '@inkdropapp/base-ui-theme@0.7.8': {}
 
   '@inkdropapp/css@0.9.12':
     optionalDependencies:
       inkdrop-model: 2.13.1
 
-  '@inkdropapp/theme-dev-helpers@0.6.4(@types/node@25.9.2)':
+  '@inkdropapp/theme-dev-helpers@0.6.5(@types/node@25.9.2)':
     dependencies:
-      '@inkdropapp/base-ui-theme': 0.7.7
+      '@inkdropapp/base-ui-theme': 0.7.8
       '@inkdropapp/css': 0.9.12
       '@vitejs/plugin-react': 6.1.1(vite@8.3.0(@types/node@25.9.2))
       commander: 15.0.0
